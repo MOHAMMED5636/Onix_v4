@@ -11,8 +11,7 @@ export default function Companies() {
         'Quality Assurance',
         'Project Planning'
       ],
-      icon: '',
-      color: 'from-blue-600 to-blue-800'
+      logo: '/images/onix-engineering-logo.png' // Add your logo path here
     },
     {
       name: 'ONIX PRIME',
@@ -25,8 +24,7 @@ export default function Companies() {
         'Business Advisory',
         'Compliance Management'
       ],
-      icon: '',
-      color: 'from-purple-600 to-purple-800'
+      logo: '/images/onix-prime-logo.png' // Add your logo path here
     },
     {
       name: 'ONIX DESIGN STUDIO',
@@ -39,8 +37,7 @@ export default function Companies() {
         '3D Visualization',
         'Design Consultation'
       ],
-      icon: '',
-      color: 'from-pink-600 to-pink-800'
+      logo: '/images/onix-design-studio-logo.png' // Add your logo path here
     },
     {
       name: 'ONIX PLUS',
@@ -53,8 +50,7 @@ export default function Companies() {
         'Project Delivery',
         'Site Coordination'
       ],
-      icon: '',
-      color: 'from-green-600 to-green-800'
+      logo: '/images/onix-plus-logo.png' // Add your logo path here
     },
     {
       name: 'CRIMSON',
@@ -67,8 +63,7 @@ export default function Companies() {
         'Quality Control',
         'Project Delivery'
       ],
-      icon: '',
-      color: 'from-red-600 to-red-800'
+      logo: '/images/crimson-logo.png' // Add your logo path here
     }
   ]
 
@@ -100,8 +95,12 @@ export default function Companies() {
             >
               {/* Company Header */}
               <div className="text-center mb-4 sm:mb-6">
-                <div className={`w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br ${company.color} rounded-xl flex items-center justify-center mx-auto mb-3 sm:mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300`}>
-                  <span className="text-xl sm:text-2xl">{company.icon}</span>
+                <div className="w-20 h-20 sm:w-24 sm:h-24 bg-white rounded-xl flex items-center justify-center mx-auto mb-3 sm:mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300 p-2">
+                  <img 
+                    src={company.logo} 
+                    alt={`${company.name} Logo`}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <h3 className="text-base sm:text-lg lg:text-xl font-bold text-white mb-2 group-hover:text-white/90 transition-colors duration-300">
                   {company.name}

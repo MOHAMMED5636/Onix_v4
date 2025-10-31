@@ -90,7 +90,7 @@ export default function Leaders() {
           x5-video-player-fullscreen="true"
           x5-video-orientation="portraint"
         >
-          <source src="https://res.cloudinary.com/dhq6qrrph/video/upload/v1761890167/Advanced_Editing_for_Construction_Videos_construction_shortvideoviral_youtubeshorts_1_l62g0c.mp4" type="video/mp4" />
+          <source src="/videos/ONIX GROUP LOADING.mp4" type="video/mp4" />
           {/* Fallback for browsers that don't support video */}
           <div className="flex items-center justify-center h-full">
             <img 
@@ -116,7 +116,7 @@ export default function Leaders() {
           playsInline
           preload="auto"
         >
-          <source src="https://res.cloudinary.com/dhq6qrrph/video/upload/v1761890167/Advanced_Editing_for_Construction_Videos_construction_shortvideoviral_youtubeshorts_1_l62g0c.mp4" type="video/mp4" />
+          <source src="/videos/OG Reel.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-black/40"></div>
       </div>

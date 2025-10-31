@@ -24,7 +24,7 @@ export default function CivilEngineeringPage() {
           playsInline
           preload="auto"
         >
-          <source src="https://res.cloudinary.com/dhq6qrrph/video/upload/v1761890167/Advanced_Editing_for_Construction_Videos_construction_shortvideoviral_youtubeshorts_1_l62g0c.mp4" type="video/mp4" />
+          <source src="/videos/ONIX GROUP LOADING.mp4" type="video/mp4" />
           <div className="flex items-center justify-center h-full">
             <img 
               src="/images/ONIX GROUP 0002.png" 
@@ -49,7 +49,7 @@ export default function CivilEngineeringPage() {
             loop
             playsInline
           >
-            <source src="https://res.cloudinary.com/dhq6qrrph/video/upload/v1761890167/Advanced_Editing_for_Construction_Videos_construction_shortvideoviral_youtubeshorts_1_l62g0c.mp4" type="video/mp4" />
+            <source src="/videos/OG Reel.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-black bg-opacity-60"></div>
         </div>

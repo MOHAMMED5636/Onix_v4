@@ -40,7 +40,7 @@ export default function Hero() {
               <div className="flex items-center justify-between h-16 sm:h-20">
                 
                 {/* ONIX Logo - Left edge */}
-                <div className="flex flex-col justify-center leading-tight gap-1">
+                <div className="flex flex-col justify-center leading-tight gap-1 -mt-2 sm:-mt-3">
                   <span className="text-white/80 text-[10px] sm:text-xs md:text-sm font-light tracking-wider">
                     ENGINEERING | CONSTRUCTION | TECHNOLOGY
                   </span>
@@ -420,7 +420,7 @@ export default function Hero() {
             playsInline
             preload="auto"
           >
-            <source src="https://res.cloudinary.com/dhq6qrrph/video/upload/v1761890167/Advanced_Editing_for_Construction_Videos_construction_shortvideoviral_youtubeshorts_1_l62g0c.mp4" type="video/mp4" />
+            <source src="/videos/OG Reel.mp4" type="video/mp4" />
           </video>
           
           {/* Subtle overlay for better text readability */}
@@ -432,7 +432,7 @@ export default function Hero() {
           <div className="max-w-2xl md:max-w-3xl lg:max-w-4xl">
             {/* Main Title */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light text-white mb-4 sm:mb-6 leading-tight">
-              EXPECT MORE. Achieve BEYOND
+              EXPECT MORE. ACHIEVE BEYOND
             </h1>
             
             {/* Subtitle */}

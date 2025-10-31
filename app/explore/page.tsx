@@ -90,7 +90,7 @@ export default function ExplorePage() {
                 setVideoError(true)
               }}
             >
-              <source src="https://res.cloudinary.com/dhq6qrrph/video/upload/v1761890167/Advanced_Editing_for_Construction_Videos_construction_shortvideoviral_youtubeshorts_1_l62g0c.mp4" type="video/mp4" />
+              <source src="/videos/OG Reel.mp4" type="video/mp4" />
             </video>
           ) : (
             <div 

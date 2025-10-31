@@ -32,7 +32,7 @@ export default function Legacy() {
           x5-video-player-fullscreen="true"
           x5-video-orientation="portraint"
         >
-          <source src="https://res.cloudinary.com/dhq6qrrph/video/upload/v1761890167/Advanced_Editing_for_Construction_Videos_construction_shortvideoviral_youtubeshorts_1_l62g0c.mp4" type="video/mp4" />
+          <source src="/videos/ONIX GROUP LOADING.mp4" type="video/mp4" />
           {/* Fallback for browsers that don't support video */}
           <div className="flex items-center justify-center h-full">
             <img 
@@ -163,7 +163,7 @@ export default function Legacy() {
                 </div>
                 <div>
                   <p className="text-white text-lg">Monday - Friday: 8:00 AM - 6:00 PM</p>
-                  <p className="text-white text-lg">Saturday: 9:00 AM - 2:00 PM</p>
+                  <p className="text-white text-lg">Saturday: 9:00 AM - 6:00 PM</p>
                 </div>
               </div>
             </div>

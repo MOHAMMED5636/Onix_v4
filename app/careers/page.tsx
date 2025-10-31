@@ -45,7 +45,7 @@ export default function CareersPage() {
       {/* Header */}
       <div className="relative h-[44vh] sm:h-[52vh]">
         <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop playsInline>
-          <source src="https://res.cloudinary.com/dhq6qrrph/video/upload/v1761890167/Advanced_Editing_for_Construction_Videos_construction_shortvideoviral_youtubeshorts_1_l62g0c.mp4" type="video/mp4" />
+          <source src="/videos/OG Reel.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 h-full flex items-center justify-center text-center px-4">
