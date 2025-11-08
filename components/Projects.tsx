@@ -127,9 +127,6 @@ export default function Projects() {
             >
               {/* Text Container - Left Side */}
               <div className="project-text-container w-full lg:w-2/5 flex flex-col justify-center px-4 lg:px-8">
-                <div className="text-orange-400 text-sm md:text-base font-medium uppercase tracking-wider mb-4">
-                  / PROJECT {num}
-                </div>
                 <h3 className="text-3xl md:text-4xl lg:text-5xl font-light text-white mb-6 leading-tight">
                   EXCEPTIONAL ENGINEERING EXCELLENCE
                 </h3>
