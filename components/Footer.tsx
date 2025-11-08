@@ -52,11 +52,9 @@ export default function Footer() {
           {/* Company Info - Far Right */}
           <div className="md:col-span-2">
             <div className="mb-6">
-              \
-
-              
-                Leading group of companies providing innovative solutions across multiple industries 
-                including construction, infrastructure, technology, and engineering with excellence and precision.
+              <p className="text-gray-300 text-sm leading-relaxed">
+                Leading group of companies providing innovative solutions across multiple industries including construction,
+                infrastructure, technology, and engineering with excellence and precision.
               </p>
             </div>
             
