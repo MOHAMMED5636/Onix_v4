@@ -1,96 +1,202 @@
+'use client'
+
+import { useState } from 'react'
 import Link from 'next/link'
+
+const primaryLinks = [
+  { label: 'About Us', href: '/about' },
+  { label: 'Contacts', href: '/contact' },
+  { label: 'Services', href: '/services' },
+  { label: 'Career', href: '/careers' },
+  { label: 'News', href: '/news' },
+  { label: 'Projects', href: '/projects' }
+]
+
+const serviceCategories = [
+  { label: 'Structural Engineering', href: '/services/structural-engineering' },
+  { label: 'Civil Engineering', href: '/services/civil-engineering' },
+  { label: 'MEP Engineering', href: '/services/mep-engineering' },
+  { label: 'Project Management', href: '/services/project-management' },
+  { label: 'Consultation', href: '/services/consultation' }
+]
+
+const offices = [
+  {
+    name: 'Dubai HQ',
+    address: ['Mardoof Building, Gate B, Office 114', 'Sheikh Zayed Road, Al Safa 1, Dubai'],
+    mapUrl:
+      'https://www.google.com/maps?rlz=1C1GCEA_enAE1177AE1177&gs_lcrp=EgZjaHJvbWUqDwgBEC4YDRivARjHARiABDIGCAAQRRg5Mg8IARAuGA0YrwEYxwEYgAQyCQgCEAAYDRiABDIJCAMQABgNGIAEMgkIBBAAGA0YgAQyCAgFEAAYFhgeMggIBhAAGBYYHjIICAcQABgWGB4yCAgIEAAYFhge0gEINTg1NWowajeoAgCwAgA&um=1&ie=UTF-8&fb=1&gl=ae&sa=X&geocode=KVcQuMpQaV8-MeHYi41WSuhk&daddr=Mardoof+building+-+GATE+(B)+-OFFICE+114+Sheikh+Zayed+Rd+-+Al+Safa+-+Al+Safa+1+-+Dubai'
+  },
+  {
+    name: 'Abu Dhabi Office',
+    address: ['Omniah Tower, Al Hisn', 'Al Markaziyah West, Abu Dhabi'],
+    mapUrl:
+      'https://www.google.com/maps/dir/Onix+Engineering+Consultancy,+Omniah+Tower+-+Abu+Dhabi/Omniah+Tower+-+Al+Hisn+-+Al+Markaziyah+West+-+Abu+Dhabi/@24.4837925,54.3088263,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x3e5e67005e94375f:0x7d1b79275c7a4b73!2m2!1d54.3500259!2d24.48372!1m5!1m1!1s0x3e5e67005e94375f:0x7d1b79275c7a4b73!2m2!1d54.3500259!2d24.48372?entry=ttu'
+  }
+]
+
+const socials = [
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/company/onix-engineering-consultancy/posts/?feedView=all' },
+  { label: 'Instagram', href: 'https://www.instagram.com/onixgroup.ae/' },
+  { label: 'Facebook', href: 'https://www.facebook.com/onixdubai/' },
+  { label: 'Pinterest', href: 'https://www.pinterest.com/onixgroup' },
+  { label: 'TikTok', href: 'https://www.tiktok.com/@onixgroup' }
+]
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
+  const [activeOffice, setActiveOffice] = useState(offices[0])
 
   return (
-    <footer id="footer" className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
-          {/* Navigation Links - Left Column */}
-          <div>
-            <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">NAVIGATION</h3>
-            <ul className="space-y-3">
-              <li><Link href="/about" className="text-white hover:text-gray-300 transition-colors text-sm">ABOUT US</Link></li>
-              <li><Link href="/contact" className="text-white hover:text-gray-300 transition-colors text-sm">CONTACTS</Link></li>
-              <li><Link href="/services" className="text-white hover:text-gray-300 transition-colors text-sm">SERVICES</Link></li>
-              <li><Link href="/careers" className="text-white hover:text-gray-300 transition-colors text-sm">CAREER</Link></li>
-              <li><Link href="/news" className="text-white hover:text-gray-300 transition-colors text-sm">NEWS</Link></li>
-              <li><Link href="/projects" className="text-white hover:text-gray-300 transition-colors text-sm">PROJECTS</Link></li>
-            </ul>
-          </div>
+    <footer className="relative overflow-hidden bg-[#050712] text-white">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.18),_transparent_60%)]" aria-hidden />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom,_rgba(124,58,237,0.22),_transparent_55%)]" aria-hidden />
 
-          {/* Services - Middle Column */}
-          <div>
-            <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">SERVICES</h3>
-            <ul className="space-y-3">
-              <li><Link href="/services/structural-engineering" className="text-white hover:text-gray-300 transition-colors text-sm">STRUCTURAL ENGINEERING</Link></li>
-              <li><Link href="/services/civil-engineering" className="text-white hover:text-gray-300 transition-colors text-sm">CIVIL ENGINEERING</Link></li>
-              <li><Link href="/services/mep-engineering" className="text-white hover:text-gray-300 transition-colors text-sm">MEP ENGINEERING</Link></li>
-              <li><Link href="/services/project-management" className="text-white hover:text-gray-300 transition-colors text-sm">PROJECT MANAGEMENT</Link></li>
-              <li><Link href="/services/consultation" className="text-white hover:text-gray-300 transition-colors text-sm">CONSULTATION</Link></li>
-            </ul>
-          </div>
-
-          {/* Contact Info - Right Column */}
-          <div>
-            <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">CONTACT</h3>
-            <div className="space-y-3">
-              <div>
-                <p className="text-white text-sm font-medium mb-1">UAE</p>
-                <p className="text-gray-300 text-sm">+971 50 123 4567</p>
-                <p className="text-gray-300 text-sm">info@onixengineering.com</p>
-              </div>
-              <div>
-                <p className="text-white text-sm font-medium mb-1">OFFICE</p>
-                <p className="text-gray-300 text-sm">123 Engineering Street</p>
-                <p className="text-gray-300 text-sm">Business District, Dubai</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Company Info - Far Right */}
-          <div className="md:col-span-2">
-            <div className="mb-6">
-              <p className="text-gray-300 text-sm leading-relaxed">
-                Leading group of companies providing innovative solutions across multiple industries including construction,
-                infrastructure, technology, and engineering with excellence and precision.
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-4 py-20">
+        {/* CTA Banner */}
+        <div className="mb-16 rounded-3xl border border-white/12 bg-white/5 px-8 py-10 backdrop-blur">
+          <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p className="text-[11px] uppercase tracking-[0.35em] text-blue-100/85">Let&apos;s Collaborate</p>
+              <h3 className="mt-3 text-2xl font-semibold text-white sm:text-3xl">
+                Planning your next landmark project?
+              </h3>
+              <p className="mt-3 text-sm text-gray-200/85 sm:text-base">
+                ONIX delivers engineering, construction, and fit-out experiences that exceed expectations. Share your
+                vision and we&apos;ll design the execution playbook.
               </p>
             </div>
-            
-            {/* Social Media Icons */}
-            <div className="flex space-x-4 mb-6">
-              <a href="https://www.linkedin.com/company/onix-engineering-consultancy/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
-                <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                </svg>
-              </a>
-              <a href="https://www.instagram.com/onixgroup.ae/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
-                <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                </svg>
-              </a>
-              <a href="https://www.facebook.com/onixdubai/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
-                <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                </svg>
+            <div className="flex flex-col gap-3 sm:flex-row">
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-gray-900 transition-transform duration-300 hover:scale-[1.02]"
+              >
+                Book a discovery call
+              </Link>
+              <a
+                href="mailto:info@onixengineering.com"
+                className="inline-flex items-center justify-center rounded-full border border-white/35 px-6 py-3 text-sm font-semibold text-white transition-all hover:border-white hover:bg-white/10"
+              >
+                Email our team
               </a>
             </div>
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-gray-800 mt-12 pt-6">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">
-              © {currentYear} Onix Group of Companies. All rights reserved.
-            </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link href="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-[200px_240px_280px_minmax(0,1fr)] lg:gap-16">
+          {/* Navigation */}
+          <div className="space-y-5">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.3em] text-gray-300">Navigation</h3>
+            <ul className="space-y-2 text-sm text-gray-300/85">
+              {primaryLinks.map((item) => (
+                <li key={item.label}>
+                  <Link href={item.href} className="transition-colors hover:text-white">
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Services */}
+          <div className="space-y-5">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.3em] text-gray-300">Services</h3>
+            <ul className="space-y-2 text-sm text-gray-300/85">
+              {serviceCategories.map((service) => (
+                <li key={service.label}>
+                  <Link href={service.href} className="transition-colors hover:text-white">
+                    {service.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Visit Us */}
+          <div className="space-y-5">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.3em] text-gray-300">Visit Us</h3>
+            <div className="rounded-2xl border border-white/12 bg-white/5 p-5 backdrop-blur">
+              <div className="flex flex-wrap gap-2">
+                {offices.map((office) => {
+                  const isActive = office.name === activeOffice.name
+                  return (
+                    <button
+                      key={office.name}
+                      onClick={() => setActiveOffice(office)}
+                      className={`rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-wider transition-all ${
+                        isActive
+                          ? 'bg-white text-gray-900 shadow-lg shadow-white/20'
+                          : 'border border-white/20 text-gray-200 hover:border-white/40 hover:bg-white/10'
+                      }`}
+                    >
+                      {office.name}
+                    </button>
+                  )
+                })}
+              </div>
+
+              <div className="mt-6 space-y-2 text-sm text-gray-200">
+                {activeOffice.address.map((line) => (
+                  <p key={line}>{line}</p>
+                ))}
+              </div>
+
+              <a
+                href={activeOffice.mapUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-blue-200 hover:text-white transition-colors"
+              >
+                Open in Google Maps ↗
+              </a>
+
+              <div className="mt-6 space-y-1 text-sm text-gray-200/85">
+                <p className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" aria-hidden />
+                  +971 50 123 4567
+                </p>
+                <p>info@onixengineering.com</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Brand Column */}
+          <div className="space-y-6">
+            <div className="space-y-4">
+              <img src="/images/ONIX GROUP 0002.png" alt="ONIX Group" className="h-20 w-auto sm:h-24" />
+              <p className="text-sm text-gray-300/85">
+                We deliver integrated engineering, construction, and design experiences—driven by innovation, disciplined
+                execution, and a culture of relentless client focus.
+              </p>
+            </div>
+            <div className="flex flex-wrap items-center gap-3 text-sm text-gray-100/85">
+              {socials.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full border border-white/20 px-3 py-1 transition-colors hover:border-white hover:bg-white/10"
+                >
+                  {social.label}
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-16 border-t border-white/12 pt-8">
+          <div className="flex flex-col gap-4 text-sm text-gray-400/80 md:flex-row md:items-center md:justify-between">
+            <p>© {currentYear} Onix Group of Companies. All rights reserved.</p>
+            <div className="flex flex-wrap items-center gap-5">
+              <Link href="/privacy" className="transition-colors hover:text-white">
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="text-gray-400 hover:text-white text-sm transition-colors">
+              <Link href="/terms" className="transition-colors hover:text-white">
                 Terms of Service
+              </Link>
+              <Link href="/contact" className="transition-colors hover:text-white">
+                Get Support
               </Link>
             </div>
           </div>

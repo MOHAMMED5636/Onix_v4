@@ -48,7 +48,7 @@ export default function Hero() {
                   <img 
                     src="/images/ONIX GROUP 0002.png" 
                     alt="ONIX Logo" 
-                    className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain"
+                    className="w-32 h-32 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-56 lg:h-56 object-contain"
                     key="onix-logo-colorful"
                   />
                 </div>

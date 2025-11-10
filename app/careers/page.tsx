@@ -80,7 +80,7 @@ export default function CareersPage() {
         <div className="bg-white/5 backdrop-blur-md border-b border-white/10 shadow-lg">
           <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-16 sm:h-20">
-              <Link href="/" className="flex flex-col justify-center leading-tight gap-1 -mt-2 sm:-mt-3">
+              <div className="flex flex-col justify-center leading-tight gap-1 -mt-2 sm:-mt-3">
                 <span className="text-white/80 text-[10px] sm:text-xs md:text-sm font-light tracking-wider">
                   ENGINEERING | CONSTRUCTION | TECHNOLOGY
                 </span>
@@ -89,7 +89,7 @@ export default function CareersPage() {
                   alt="ONIX Logo"
                   className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain"
                 />
-              </Link>
+              </div>
 
               <div className="flex items-center space-x-4 sm:space-x-6">
                 <nav className="hidden md:flex lg:hidden items-center space-x-3">
