@@ -49,16 +49,14 @@ export default function CompaniesOverview() {
     <div className="min-h-screen relative">
       {/* Video Background */}
       <div className="absolute inset-0 w-full h-full overflow-hidden">
-        <video
-          className="w-full h-full object-cover"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-        >
-          <source src="/videos/OG Reel.mp4" type="video/mp4" />
-        </video>
+        <iframe
+          src="https://player.vimeo.com/video/1135633257?autoplay=1&loop=1&muted=1&controls=0&title=0&byline=0&portrait=0"
+          title="ONIX Companies Background"
+          className="pointer-events-none absolute top-1/2 left-1/2 min-h-[120vh] min-w-[120vw] -translate-x-1/2 -translate-y-1/2"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowFullScreen
+          frameBorder="0"
+        />
         <div className="absolute inset-0 bg-black/30"></div>
       </div>
 

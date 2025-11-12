@@ -42,16 +42,15 @@ export default function StructuralEngineeringPage() {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <video
-            className="w-full h-full object-cover"
-            autoPlay
-            muted
-            loop
-            playsInline
-          >
-            <source src="/videos/OG Reel.mp4" type="video/mp4" />
-          </video>
-          <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+          <iframe
+            src="https://player.vimeo.com/video/1135633257?autoplay=1&loop=1&muted=1&controls=0&title=0&byline=0&portrait=0"
+            title="ONIX Structural Background"
+            className="pointer-events-none absolute top-1/2 left-1/2 min-h-[120vh] min-w-[120vw] -translate-x-1/2 -translate-y-1/2"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+            frameBorder="0"
+          />
+          <div className="absolute inset-0 bg-black/55" />
         </div>
         
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4">

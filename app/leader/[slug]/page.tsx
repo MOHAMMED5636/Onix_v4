@@ -25,11 +25,6 @@ export default function LeaderPage() {
     return () => clearTimeout(timer)
   }, [])
 
-  // Handle video end to rotate to next video
-  const handleVideoEnd = () => {
-    setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % backgroundVideos.length)
-  }
-
   useEffect(() => {
     // Leader data based on slug
     const leadersData = {
@@ -176,7 +171,7 @@ export default function LeaderPage() {
           loop={false}
           playsInline
           preload="auto"
-          onEnded={handleVideoEnd}
+          onEnded={() => setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % backgroundVideos.length)}
         >
           <source src={backgroundVideos[currentVideoIndex]} type="video/mp4" />
         </video>

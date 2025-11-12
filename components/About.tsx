@@ -59,10 +59,10 @@ export default function About() {
         {/* Video Background for Who We Are Section */}
         <div className="absolute inset-0 w-full h-full overflow-hidden">
           <div className="absolute inset-y-0 left-0 w-1/2">
-            <video 
-              autoPlay 
-              loop 
-              muted 
+            <video
+              autoPlay
+              loop
+              muted
               playsInline
               className="w-full h-full object-cover"
             >
@@ -72,12 +72,12 @@ export default function About() {
           </div>
 
           <div className="absolute inset-y-0 right-0 w-1/2">
-            <video 
-              autoPlay 
-              loop 
-              muted 
+            <video
+              autoPlay
+              loop
+              muted
               playsInline
-              className="w-full h-full object-cover object-top"
+              className="w-full h-full object-cover"
             >
               <source src="/videos/Get to know the brilliant minds and hands at Onix! _ Onix Engineering Consultancy _ DXB.mp4" type="video/mp4" />
             </video>
@@ -150,7 +150,7 @@ export default function About() {
             playsInline
             className="w-full h-full object-cover"
           >
-            <source src="/videos/OG Reel.mp4" type="video/mp4" />
+            <source src="/videos/Discover the art of living in our exquisite villa _ Onix Engineering Consultancy _ DXB.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/80 to-transparent"></div>
         </div>
@@ -275,7 +275,7 @@ export default function About() {
             playsInline
             className="w-full h-full object-cover"
           >
-            <source src="/videos/Discover the art of living in our exquisite villa _ Onix Engineering Consultancy _ DXB.mp4" type="video/mp4" />
+            <source src="/videos/construction-video.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 via-gray-900/70 to-transparent"></div>
         </div>

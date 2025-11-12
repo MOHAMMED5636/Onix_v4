@@ -67,12 +67,12 @@ export default function Footer() {
               </p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row">
-              <Link
-                href="/contact"
+              <a
+                href="tel:+97142838880"
                 className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-gray-900 transition-transform duration-300 hover:scale-[1.02]"
               >
                 Book a discovery call
-              </Link>
+              </a>
               <a
                 href="mailto:info@onixengineering.com"
                 className="inline-flex items-center justify-center rounded-full border border-white/35 px-6 py-3 text-sm font-semibold text-white transition-all hover:border-white hover:bg-white/10"

@@ -48,7 +48,7 @@ export default function Hero() {
                   <img 
                     src="/images/ONIX GROUP 0002.png" 
                     alt="ONIX Logo" 
-                    className="w-32 h-32 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-56 lg:h-56 object-contain"
+                    className="w-28 h-28 sm:w-32 sm:h-32 md:w-44 md:h-44 lg:w-52 lg:h-52 object-contain"
                     key="onix-logo-colorful"
                   />
                 </div>
@@ -442,16 +442,14 @@ export default function Hero() {
         {/* Background */}
         <div className="absolute inset-0 w-full h-full overflow-hidden">
           {/* Video Background */}
-          <video
-            className="w-full h-full object-cover"
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-          >
-            <source src="/videos/OG Reel.mp4" type="video/mp4" />
-          </video>
+          <iframe
+            src="https://player.vimeo.com/video/1135633257?autoplay=1&loop=1&muted=1&controls=0&title=0&byline=0&portrait=0"
+            title="ONIX Background"
+            className="pointer-events-none absolute top-1/2 left-1/2 min-h-[120vh] min-w-[120vw] -translate-x-1/2 -translate-y-1/2"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+            frameBorder="0"
+          />
           
           {/* Subtle overlay for better text readability */}
           <div className="absolute inset-0 bg-black bg-opacity-40"></div>

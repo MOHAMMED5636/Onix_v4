@@ -72,37 +72,16 @@ export default function ExplorePage() {
       {/* Hero Section with Video Background */}
       <section className="relative h-screen w-full overflow-hidden">
         {/* Video Background */}
-        <div className="absolute inset-0 w-full h-full">
-          {!videoError ? (
-            <video
-              className="w-full h-full object-cover"
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="auto"
-              onLoadedData={() => {
-                console.log('Video loaded successfully')
-                setIsVideoLoaded(true)
-              }}
-              onError={(e) => {
-                console.log('Video error:', e)
-                setVideoError(true)
-              }}
-            >
-              <source src="/videos/OG Reel.mp4" type="video/mp4" />
-            </video>
-          ) : (
-            <div 
-              className="w-full h-full bg-cover bg-center"
-              style={{
-                backgroundImage: "url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
-              }}
-            />
-          )}
-          
-          {/* Semi-transparent dark overlay */}
-          <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div className="absolute inset-0 overflow-hidden rounded-3xl">
+          <iframe
+            src="https://player.vimeo.com/video/1135633257?autoplay=1&loop=1&muted=1&controls=0&title=0&byline=0&portrait=0"
+            title="ONIX Explore Background"
+            className="pointer-events-none absolute top-1/2 left-1/2 min-h-[120vh] min-w-[120vw] -translate-x-1/2 -translate-y-1/2"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+            frameBorder="0"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-gray-900/70 via-gray-900/40 to-gray-900/90"></div>
         </div>
 
         {/* Navigation Header */}
