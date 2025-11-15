@@ -52,7 +52,7 @@ export default function LeaderPage() {
         name: 'Ahmed Al Kaddour',
         title: 'Chief Operating Officer',
         description: 'With a strategic mindset and exceptional operational expertise, Ahmed has driven the company\'s growth across multiple sectors, ensuring excellence in every project undertaken.',
-        image: '/images/ahmed al kaddour.webp',
+        image: '/images/ahmed_al_kaddour.webp',
         achievements: [
           'Optimized operational efficiency by 40%',
           'Managed over 200 successful projects',

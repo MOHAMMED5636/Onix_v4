@@ -182,7 +182,7 @@ export default function About() {
                   name: 'Ahmed Al Kaddour',
                   title: 'Managing Director',
                   description: 'Civil Engineer with 25+ years of experience in Dubai. Ahmed leads ONIX Group with a delivery-first mindset, combining technical depth and proven leadership to drive growth across engineering and construction.',
-                  image: '/images/ahmed al kaddour.webp',
+                  image: '/images/ahmed_al_kaddour.webp',
                   achievements: [
                     '25+ years delivering civil engineering projects in Dubai',
                     'Led multidisciplinary teams across major developments',
