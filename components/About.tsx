@@ -66,7 +66,7 @@ export default function About() {
               playsInline
               className="w-full h-full object-cover"
             >
-              <source src="/videos/Get ready for something spectacular! _ Onix Engineering Consultancy _ DXB.mp4" type="video/mp4" />
+              <source src="https://res.cloudinary.com/dyfkb0dkq/video/upload/v1763241554/Get_ready_for_something_spectacular___Onix_Engineering_Consultancy___DXB_loztv0.mp4" type="video/mp4" />
             </video>
             <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 via-gray-900/40 to-transparent"></div>
           </div>
@@ -79,7 +79,7 @@ export default function About() {
               playsInline
               className="w-full h-full object-cover"
             >
-              <source src="/videos/Get to know the brilliant minds and hands at Onix! _ Onix Engineering Consultancy _ DXB.mp4" type="video/mp4" />
+              <source src="https://res.cloudinary.com/dyfkb0dkq/video/upload/v1763241762/Get_to_know_the_brilliant_minds_and_hands_at_Onix___Onix_Engineering_Consultancy___DXB_dt0ivj.mp4" type="video/mp4" />
             </video>
             <div className="absolute inset-0 bg-gradient-to-l from-gray-900/80 via-gray-900/40 to-transparent"></div>
           </div>
@@ -150,7 +150,7 @@ export default function About() {
             playsInline
             className="w-full h-full object-cover"
           >
-            <source src="/videos/Discover the art of living in our exquisite villa _ Onix Engineering Consultancy _ DXB.mp4" type="video/mp4" />
+            <source src="https://res.cloudinary.com/dyfkb0dkq/video/upload/v1763241939/Discover_the_art_of_living_in_our_exquisite_villa___Onix_Engineering_Consultancy___DXB_px2hnl.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/80 to-transparent"></div>
         </div>
@@ -275,7 +275,7 @@ export default function About() {
             playsInline
             className="w-full h-full object-cover"
           >
-            <source src="/videos/construction-video.mp4" type="video/mp4" />
+            <source src="https://res.cloudinary.com/dyfkb0dkq/video/upload/v1763241138/construction-video_too8by.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 via-gray-900/70 to-transparent"></div>
         </div>
