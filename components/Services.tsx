@@ -87,7 +87,7 @@ export default function Services() {
     <>
     <section id="services" className="py-12 sm:py-20 relative overflow-hidden min-h-screen flex flex-col justify-start">
       {/* Construction Background for Services - Full Fit */}
-      <div className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat brightness-50 contrast-125" style={{ backgroundImage: 'url(/images/01.jpg)' }}>
+      <div className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat brightness-50 contrast-125" style={{ backgroundImage: 'url(/images/01.webp)' }}>
         <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/90 to-transparent"></div>
       </div>
       

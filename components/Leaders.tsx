@@ -22,7 +22,7 @@ export default function Leaders() {
       title: 'Founder',
       description:
         'Founder of ONIX, specialized in Architecture and Civil Engineering with 15+ years of hands-on experience delivering high-impact projects.',
-      image: '/images/rameez-kaddour.png',
+      image: '/images/rameez-kaddour.webp',
       slug: 'rameez-kaddour',
       achievements: [
         '15+ years across architecture and civil engineering',
@@ -35,7 +35,7 @@ export default function Leaders() {
       title: 'Managing Director',
       description:
         "Civil Engineer with 25+ years of experience in Dubai. Ahmed leads ONIX Group with a delivery-first mindset, combining technical depth and proven leadership to drive growth across engineering and construction.",
-      image: '/images/ahmed al kaddour.png',
+      image: '/images/ahmed al kaddour.webp',
       slug: 'ahmed-al-kaddour',
       achievements: [
         '25+ years delivering civil engineering projects in Dubai',
@@ -48,7 +48,7 @@ export default function Leaders() {
       title: 'Head of Design Department',
       description:
         'Architect with 10+ years of experience leading design across residential and commercial projects, driving concept-to-detail excellence at ONIX.',
-      image: '/images/kaddour.png',
+      image: '/images/kaddour.webp',
       slug: 'kaddour-al-kaddour',
       achievements: [
         '10+ years in architectural design leadership',
@@ -61,7 +61,7 @@ export default function Leaders() {
       title: 'Head of ONIX PLUS',
       description:
         'Leads ONIX PLUS (Construction, Fit‑Out, and Landscaping). Focused on turning design and engineering strategies into reality with precision, quality, and on‑time delivery within budget.',
-      image: '/images/nabil.png',
+      image: '/images/nabil.webp',
       slug: 'nabil-al-kaddour',
       achievements: [
         'Delivered multi‑scope construction, fit‑out, and landscape projects',

@@ -143,7 +143,7 @@ export default function Projects() {
               {/* Image Container - Right Side */}
               <div className="project-image-container w-full lg:w-3/5 h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden">
                 <img
-                  src={`/images/0${num}.jpg`}
+                  src={`/images/0${num}.webp`}
                   alt={`Project ${num}`}
                   className="w-full h-full object-cover"
                 />

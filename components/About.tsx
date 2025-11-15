@@ -182,7 +182,7 @@ export default function About() {
                   name: 'Ahmed Al Kaddour',
                   title: 'Managing Director',
                   description: 'Civil Engineer with 25+ years of experience in Dubai. Ahmed leads ONIX Group with a delivery-first mindset, combining technical depth and proven leadership to drive growth across engineering and construction.',
-                  image: '/images/ahmed al kaddour.png',
+                  image: '/images/ahmed al kaddour.webp',
                   achievements: [
                     '25+ years delivering civil engineering projects in Dubai',
                     'Led multidisciplinary teams across major developments',
@@ -193,7 +193,7 @@ export default function About() {
                   name: 'Rameez Kaddour',
                   title: 'Founder',
                   description: 'Founder of ONIX, specialized in Architecture and Civil Engineering with 15+ years of hands-on experience delivering high-impact projects.',
-                  image: '/images/rameez-kaddour.png',
+                  image: '/images/rameez-kaddour.webp',
                   achievements: [
                     '15+ years across architecture and civil engineering',
                     'Delivered multi-disciplinary projects from concept to completion',
@@ -204,7 +204,7 @@ export default function About() {
                   name: 'Kaddour Al Kaddour',
                   title: 'Head of Design Department',
                   description: 'Architect with 10+ years of experience leading design across residential and commercial projects, driving concept-to-detail excellence at ONIX.',
-                  image: '/images/kaddour.png',
+                  image: '/images/kaddour.webp',
                   achievements: [
                     '10+ years in architectural design leadership',
                     'Delivered award‑winning residential and commercial concepts',
@@ -215,7 +215,7 @@ export default function About() {
                   name: 'Nabil Al Kaddour',
                   title: 'Head of ONIX PLUS',
                   description: 'Leads ONIX PLUS (Construction, Fit‑Out, and Landscaping). Focused on turning design and engineering strategies into reality with precision, quality, and on‑time delivery within budget.',
-                  image: '/images/nabil.png',
+                  image: '/images/nabil.webp',
                   achievements: [
                     'Delivered multi‑scope construction, fit‑out, and landscape projects',
                     'Built execution frameworks for quality and cost control',

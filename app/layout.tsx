@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: 'Onix Engineering Consultancy',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/og-image.webp',
         width: 1200,
         height: 630,
         alt: 'Onix Engineering Consultancy',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Onix Engineering Consultancy - Professional Engineering Solutions',
     description: 'Leading engineering consultancy providing innovative solutions for construction, infrastructure, and technical projects.',
-    images: ['/og-image.jpg'],
+    images: ['/og-image.webp'],
   },
   robots: {
     index: true,

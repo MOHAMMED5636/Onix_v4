@@ -32,7 +32,7 @@ export default function LeaderPage() {
         name: 'Rameez Kaddour',
         title: 'Chief Executive Officer',
         description: 'A visionary leader with over 25 years of experience in engineering and construction, Rameez has been instrumental in shaping Onix Group into a powerhouse of innovation and excellence.',
-        image: '/images/rameez-kaddour.png',
+        image: '/images/rameez-kaddour.webp',
         achievements: [
           'Led company growth from startup to industry leader',
           'Pioneered sustainable construction practices',
@@ -52,7 +52,7 @@ export default function LeaderPage() {
         name: 'Ahmed Al Kaddour',
         title: 'Chief Operating Officer',
         description: 'With a strategic mindset and exceptional operational expertise, Ahmed has driven the company\'s growth across multiple sectors, ensuring excellence in every project undertaken.',
-        image: '/images/ahmed al kaddour.png',
+        image: '/images/ahmed al kaddour.webp',
         achievements: [
           'Optimized operational efficiency by 40%',
           'Managed over 200 successful projects',
@@ -72,7 +72,7 @@ export default function LeaderPage() {
         name: 'Kaddour Al Kaddour',
         title: 'Founding Chairman',
         description: 'The visionary founder who laid the foundation of Onix Group, Kaddour\'s entrepreneurial spirit and unwavering commitment to quality have been the cornerstone of our success story.',
-        image: '/images/kaddour.png',
+        image: '/images/kaddour.webp',
         achievements: [
           'Founded Onix Group in 1995',
           'Established company values and culture',
@@ -92,7 +92,7 @@ export default function LeaderPage() {
         name: 'Nabil Al Kaddour',
         title: 'Chief Financial Officer',
         description: 'A financial strategist par excellence, Nabil has steered the company through dynamic market conditions with prudent fiscal management and forward-thinking investment strategies.',
-        image: '/images/nabil.png',
+        image: '/images/nabil.webp',
         achievements: [
           'Maintained financial stability through market cycles',
           'Secured major funding for expansion',
