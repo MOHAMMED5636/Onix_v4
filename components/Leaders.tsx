@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Leaders() {
   const [isLoading, setIsLoading] = useState(true)
@@ -93,7 +94,7 @@ export default function Leaders() {
           <source src="/videos/ONIX GROUP LOADING.mp4" type="video/mp4" />
           {/* Fallback for browsers that don't support video */}
           <div className="flex items-center justify-center h-full">
-            <img 
+            <Image 
               src="/images/ONIX GROUP 0002.png" 
               alt="ONIX GROUP Loading" 
               className="object-contain animate-pulse w-[120px] sm:w-[160px] md:w-[200px] lg:w-[240px] h-auto"
@@ -131,7 +132,7 @@ export default function Leaders() {
       {/* Onix Logo - Top Center */}
       <div className="pt-6 pb-6 text-center relative z-20">
         <div className="flex items-center justify-center mb-2">
-          <img 
+          <Image 
             src="/images/ONIX GROUP 0002.png" 
             alt="ONIX Logo" 
             className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 object-contain"
@@ -158,7 +159,7 @@ export default function Leaders() {
                 {/* Leader Photo */}
                 <div className="mb-4">
                   <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-white/30 shadow-xl">
-                    <img 
+                    <Image 
                       src={leader.image} 
                       alt={leader.name}
                       className="w-full h-full object-cover object-top transform group-hover:scale-110 transition-transform duration-500"
@@ -391,7 +392,7 @@ export default function Leaders() {
               {/* Header */}
               <div className="flex justify-between items-start mb-6">
                 <div className="flex items-center space-x-4">
-                  <img 
+                  <Image 
                     src="/images/SAMMY.png" 
                     alt="Sami Ibrahim" 
                     className="w-20 h-20 rounded-full object-cover object-top"

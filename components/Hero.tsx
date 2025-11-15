@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
+import Image from 'next/image'
 
 export default function Hero() {
   const router = useRouter()
@@ -45,7 +46,7 @@ export default function Hero() {
                     ENGINEERING | CONSTRUCTION | TECHNOLOGY
                   </span>
                   {/* ONIX GROUP Logo */}
-                  <img 
+                  <Image
                     src="/images/ONIX GROUP 0002.png" 
                     alt="ONIX Logo" 
                     className="w-28 h-28 sm:w-32 sm:h-32 md:w-44 md:h-44 lg:w-52 lg:h-52 object-contain"
@@ -286,7 +287,7 @@ export default function Hero() {
                   {/* Glassmorphism Header with Logo */}
                   <div className="flex items-center justify-between mb-12">
                   <div className="flex items-center space-x-3">
-                    <img
+                    <Image
                       src="/images/ONIX GROUP 0002.png"
                       alt="ONIX GROUP Logo"
                       className="h-14 w-auto object-contain"

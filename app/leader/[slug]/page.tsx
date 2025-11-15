@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useParams } from 'next/navigation'
+import Image from 'next/image'
 
 export default function LeaderPage() {
   const [isLoading, setIsLoading] = useState(true)
@@ -135,7 +136,7 @@ export default function LeaderPage() {
           <source src="/videos/ONIX GROUP LOADING.mp4" type="video/mp4" />
           {/* Fallback for browsers that don't support video */}
           <div className="flex items-center justify-center h-full">
-            <img 
+            <Image 
               src="/images/ONIX GROUP 0002.png" 
               alt="ONIX GROUP Loading" 
               className="object-contain animate-pulse w-[120px] sm:w-[160px] md:w-[200px] lg:w-[240px] h-auto"
@@ -191,7 +192,7 @@ export default function LeaderPage() {
       {/* Onix Logo - Top Center */}
       <div className="pt-6 pb-6 text-center relative z-20">
         <div className="flex items-center justify-center mb-2">
-          <img 
+          <Image 
             src="/images/ONIX_LOGO.png" 
             alt="ONIX Logo" 
             className="w-16 h-16 object-contain"
@@ -208,7 +209,7 @@ export default function LeaderPage() {
             {/* Left Side - Photo and Basic Info */}
             <div className="text-center lg:text-left">
               <div className="w-48 h-48 mx-auto lg:mx-0 rounded-full overflow-hidden border-4 border-white/30 shadow-2xl mb-6">
-                <img 
+                <Image 
                   src={leader.image} 
                   alt={leader.name}
                   className="w-full h-full object-cover object-top"

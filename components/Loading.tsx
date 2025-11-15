@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useState, useEffect } from 'react'
 
 export default function Loading() {
@@ -30,7 +31,7 @@ export default function Loading() {
         <source src="/videos/ONIX GROUP LOADING.mp4" type="video/mp4" />
         {/* Fallback for browsers that don't support video */}
         <div className="flex items-center justify-center h-full">
-          <img 
+          <Image 
             src="/images/ONIX GROUP 0002.png" 
             alt="ONIX GROUP Loading" 
             className="object-contain animate-pulse w-[120px] sm:w-[160px] md:w-[200px] lg:w-[240px] h-auto"

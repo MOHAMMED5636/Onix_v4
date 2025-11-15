@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 
 import { useState, useEffect } from 'react'
 
@@ -228,9 +229,11 @@ export default function About() {
                     {/* Leader Photo */}
                     <div className="mb-4">
                       <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-white/30 shadow-xl">
-                        <img 
+                        <Image 
                           src={leader.image} 
                           alt={leader.name}
+                          width={128}
+                          height={128}
                           className="w-full h-full object-cover object-top transform group-hover:scale-110 transition-transform duration-500"
                           style={{ objectPosition: index === 0 ? '50% 20%' : index === 1 ? '50% 10%' : index === 2 ? '50% 20%' : index === 3 ? '50% 20%' : '50% 50%' }}
                         />

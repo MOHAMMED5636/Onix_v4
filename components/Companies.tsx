@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export default function Companies() {
   const companies = [
     {
@@ -97,7 +99,7 @@ export default function Companies() {
               {/* Company Header */}
               <div className="text-center mb-4 sm:mb-6">
                 <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-xl flex items-center justify-center mx-auto mb-3 sm:mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300 p-2">
-                  <img 
+                  <Image 
                     src={company.logo} 
                     alt={`${company.name} Logo`}
                     className="w-full h-full object-contain"

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Legacy() {
   const [isLoading, setIsLoading] = useState(true)
@@ -35,7 +36,7 @@ export default function Legacy() {
           <source src="/videos/ONIX GROUP LOADING.mp4" type="video/mp4" />
           {/* Fallback for browsers that don't support video */}
           <div className="flex items-center justify-center h-full">
-            <img 
+            <Image 
               src="/images/ONIX GROUP 0002.png" 
               alt="ONIX GROUP Loading" 
               className="object-contain animate-pulse w-[120px] sm:w-[160px] md:w-[200px] lg:w-[240px] h-auto"
@@ -51,7 +52,7 @@ export default function Legacy() {
       {/* ONIX Logo - Top Left (Clickable to Home) */}
       <div className="fixed -top-20 left-0 z-50">
         <Link href="/" className="inline-block hover:opacity-80 transition-opacity duration-300">
-          <img 
+          <Image 
             src="/images/ONIX GROUP 0002.png" 
             alt="ONIX Logo" 
             className="w-56 h-56 object-contain"

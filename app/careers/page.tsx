@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
+import Image from "next/image"
 
 export default function CareersPage() {
   const router = useRouter()
@@ -84,7 +85,7 @@ export default function CareersPage() {
                 <span className="text-white/80 text-[10px] sm:text-xs md:text-sm font-light tracking-wider">
                   ENGINEERING | CONSTRUCTION | TECHNOLOGY
                 </span>
-                <img
+                <Image
                   src="/images/ONIX GROUP 0002.png"
                   alt="ONIX Logo"
                   className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain"
@@ -333,7 +334,7 @@ export default function CareersPage() {
               <div className="p-8 h-full flex flex-col">
                 <div className="flex items-center justify-between mb-12">
                   <div className="flex items-center space-x-3">
-                    <img src="/images/ONIX GROUP 0002.png" alt="ONIX GROUP Logo" className="h-14 w-auto object-contain" />
+                    <Image src="/images/ONIX GROUP 0002.png" alt="ONIX GROUP Logo" className="h-14 w-auto object-contain" />
                     <div className="flex flex-col">
                       <span className="text-white font-bold text-lg tracking-wide">ONIX GROUP</span>
                       <span className="text-white/70 text-xs font-light tracking-wider">ENGINEERING | CONSTRUCTION</span>

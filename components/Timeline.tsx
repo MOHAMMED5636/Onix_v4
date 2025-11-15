@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import ScrollSection from './ScrollSection'
+import Image from 'next/image'
 
 export default function Timeline() {
   const [isLoading, setIsLoading] = useState(true)
@@ -74,7 +75,7 @@ export default function Timeline() {
           <source src="/videos/ONIX GROUP LOADING.mp4" type="video/mp4" />
           {/* Fallback for browsers that don't support video */}
           <div className="flex items-center justify-center h-full">
-            <img 
+            <Image 
               src="/images/ONIX GROUP 0002.png" 
               alt="ONIX GROUP Loading" 
               className="object-contain animate-pulse w-[120px] sm:w-[160px] md:w-[200px] lg:w-[240px] h-auto"
@@ -112,7 +113,7 @@ export default function Timeline() {
       {/* Onix Logo - Top Center */}
       <div className="pt-6 pb-6 text-center relative z-20">
         <div className="flex items-center justify-center mb-2">
-          <img 
+          <Image 
             src="/images/ONIX GROUP 0002.png" 
             alt="ONIX Logo" 
             className="w-48 h-48 object-contain"
@@ -247,7 +248,7 @@ export default function Timeline() {
                   <ScrollSection direction="left">
                     <div className="relative">
                       <div className="w-full h-96 lg:h-[500px] rounded-full overflow-hidden border-4 border-white/20 shadow-2xl">
-                        <img 
+                        <Image 
                           src={event.image} 
                           alt={event.title}
                           className="w-full h-full object-cover"

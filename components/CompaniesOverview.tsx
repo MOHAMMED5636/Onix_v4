@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function CompaniesOverview() {
   const [isLoading, setIsLoading] = useState(true)
@@ -34,7 +35,7 @@ export default function CompaniesOverview() {
           <source src="/videos/ONIX GROUP LOADING.mp4" type="video/mp4" />
           {/* Fallback for browsers that don't support video */}
           <div className="flex items-center justify-center h-full">
-            <img 
+            <Image
               src="/images/ONIX GROUP 0002.png" 
               alt="ONIX GROUP Loading" 
               className="object-contain animate-pulse w-[120px] sm:w-[160px] md:w-[200px] lg:w-[240px] h-auto"

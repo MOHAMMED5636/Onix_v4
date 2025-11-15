@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useEffect, useRef } from 'react'
 
 export default function Projects() {
@@ -75,7 +76,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div key={index} className="bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-700">
               <div className="relative h-48">
-                <img 
+                <Image 
                   src={project.image} 
                   alt={project.title}
                   className="w-full h-full object-cover"
@@ -142,7 +143,7 @@ export default function Projects() {
               
               {/* Image Container - Right Side */}
               <div className="project-image-container w-full lg:w-3/5 h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden">
-                <img
+                <Image
                   src={`/images/0${num}.webp`}
                   alt={`Project ${num}`}
                   className="w-full h-full object-cover"
