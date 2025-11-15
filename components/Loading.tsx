@@ -1,21 +1,21 @@
-'use client'
+"use client";
 
-import Image from 'next/image'
-import { useState, useEffect } from 'react'
+import Image from "next/image";
+import { useState, useEffect } from "react";
 
 export default function Loading() {
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     // Simulate loading time
     const timer = setTimeout(() => {
-      setIsLoading(false)
-    }, 3000) // 3 seconds loading time
+      setIsLoading(false);
+    }, 3000); // 3 seconds loading time
 
-    return () => clearTimeout(timer)
-  }, [])
+    return () => clearTimeout(timer);
+  }, []);
 
-  if (!isLoading) return null
+  if (!isLoading) return null;
 
   return (
     <div className="fixed inset-0 bg-black z-[9999] flex items-center justify-center">
@@ -31,13 +31,15 @@ export default function Loading() {
         <source src="/videos/ONIX GROUP LOADING.mp4" type="video/mp4" />
         {/* Fallback for browsers that don't support video */}
         <div className="flex items-center justify-center h-full">
-          <Image 
-            src="/images/ONIX GROUP 0002.png" 
-            alt="ONIX GROUP Loading" 
+          <Image
+            src="/images/ONIX GROUP 0002.png"
+            alt="ONIX GROUP Loading"
+            width={240}
+            height={240}
             className="object-contain animate-pulse w-[120px] sm:w-[160px] md:w-[200px] lg:w-[240px] h-auto"
           />
         </div>
       </video>
     </div>
-  )
+  );
 }

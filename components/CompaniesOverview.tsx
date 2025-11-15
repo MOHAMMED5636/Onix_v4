@@ -38,6 +38,8 @@ export default function CompaniesOverview() {
             <Image
               src="/images/ONIX GROUP 0002.png" 
               alt="ONIX GROUP Loading" 
+              width={240}
+              height={240}
               className="object-contain animate-pulse w-[120px] sm:w-[160px] md:w-[200px] lg:w-[240px] h-auto"
             />
           </div>

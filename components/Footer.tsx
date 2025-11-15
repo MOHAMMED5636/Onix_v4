@@ -164,7 +164,7 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="space-y-6">
             <div className="space-y-4">
-              <Image src="/images/ONIX GROUP 0002.png" alt="ONIX Group" className="h-20 w-auto sm:h-24" />
+              <Image src="/images/ONIX GROUP 0002.png" width={240} height={240} alt="ONIX Group" className="h-20 w-auto sm:h-24" />
               <p className="text-sm text-gray-300/85">
                 We deliver integrated engineering, construction, and design experiences—driven by innovation, disciplined
                 execution, and a culture of relentless client focus.
