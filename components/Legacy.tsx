@@ -32,7 +32,7 @@ export default function Legacy() {
           x5-video-player-fullscreen="true"
           x5-video-orientation="portraint"
         >
-          <source src="/videos/ONIX GROUP LOADING.mp4" type="video/mp4" />
+          <source src="/videos/ONIX_GROUP_LOADING.mp4" type="video/mp4" />
           {/* Fallback for browsers that don't support video */}
           <div className="flex items-center justify-center h-full">
             <Image

@@ -82,7 +82,7 @@ export default function Timeline() {
           x5-video-player-fullscreen="true"
           x5-video-orientation="portraint"
         >
-          <source src="/videos/ONIX GROUP LOADING.mp4" type="video/mp4" />
+          <source src="/videos/ONIX_GROUP_LOADING.mp4" type="video/mp4" />
           {/* Fallback for browsers that don't support video */}
           <div className="flex items-center justify-center h-full">
             <Image
@@ -285,9 +285,11 @@ export default function Timeline() {
                   <ScrollSection direction="left">
                     <div className="relative">
                       <div className="w-full h-96 lg:h-[500px] rounded-full overflow-hidden border-4 border-white/20 shadow-2xl">
-                        <Image
-                          src={event.image}
+                        <Image 
+                          src={event.image} 
                           alt={event.title}
+                          width={600}
+                          height={400}
                           className="w-full h-full object-cover"
                         />
                       </div>

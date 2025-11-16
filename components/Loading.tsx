@@ -28,7 +28,7 @@ export default function Loading() {
         playsInline
         preload="auto"
       >
-        <source src="/videos/ONIX GROUP LOADING.mp4" type="video/mp4" />
+        <source src="/videos/ONIX_GROUP_LOADING.mp4" type="video/mp4" />
         {/* Fallback for browsers that don't support video */}
         <div className="flex items-center justify-center h-full">
           <Image
