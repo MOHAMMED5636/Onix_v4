@@ -4,7 +4,7 @@ const nextConfig = {
   images: {
     domains: ['images.unsplash.com', 'via.placeholder.com'],
     unoptimized: true, // Keep local images unoptimized for PNG compatibility
-    formats: ['image/webp', 'image/avif'],
+    formats: ['image/webp', 'image/avif', 'image/png', 'image/jpeg'],
   },
 }
 
