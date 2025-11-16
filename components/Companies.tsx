@@ -102,6 +102,8 @@ export default function Companies() {
                   <Image 
                     src={company.logo} 
                     alt={`${company.name} Logo`}
+                    width={80}
+                    height={80}
                     className="w-full h-full object-contain"
                   />
                 </div>

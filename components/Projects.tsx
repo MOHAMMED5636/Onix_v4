@@ -79,6 +79,8 @@ export default function Projects() {
                 <Image 
                   src={project.image} 
                   alt={project.title}
+                  width={400}
+                  height={192}
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute top-4 left-4 bg-white text-gray-900 px-3 py-1 rounded-full text-sm font-medium">
@@ -146,6 +148,8 @@ export default function Projects() {
                 <Image
                   src={`/images/0${num}.webp`}
                   alt={`Project ${num}`}
+                  width={800}
+                  height={600}
                   className="w-full h-full object-cover"
                 />
               </div>
