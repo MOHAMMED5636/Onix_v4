@@ -125,8 +125,8 @@ export default function Timeline() {
           {/* Fallback for browsers that don't support video */}
           <div className="flex items-center justify-center h-full">
             <img 
-              src="/images/ONIX_GROUP_0002.png" 
-              alt="ONIX GROUP Loading" 
+              src="/images/ONIX_GROUP_0002.png"
+              alt="ONIX GROUP Loading"
               className="object-contain animate-pulse w-[120px] sm:w-[160px] md:w-[200px] lg:w-[240px] h-auto"
             />
           </div>
@@ -153,8 +153,8 @@ export default function Timeline() {
       <div className="pt-6 pb-6 text-center relative z-20">
         <div className="flex items-center justify-center mb-2">
           <img 
-            src="/images/ONIX_GROUP_0002.png" 
-            alt="ONIX Logo" 
+            src="/images/ONIX_GROUP_0002.png"
+            alt="ONIX Logo"
             className="w-48 h-48 object-contain"
           />
         </div>
@@ -176,28 +176,28 @@ export default function Timeline() {
           <div className="relative z-20 w-full">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
               {/* Left Side - Text Content with Scroll Animation */}
-              <div className="space-y-6">
-                {/* Main Title */}
-                <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-                  Founders Built With Engineering Grit
-                </h3>
-                
-                {/* Description */}
                 <div className="space-y-6">
-                  <p className="text-lg text-gray-300 leading-relaxed">
+                  {/* Main Title */}
+                  <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+                  Founders Built With Engineering Grit
+                  </h3>
+
+                  {/* Description */}
+                  <div className="space-y-6">
+                    <p className="text-lg text-gray-300 leading-relaxed">
                     Our story began in 2020, when founder Ahmed Al Kaddour channelled two decades of engineering expertise into launching a new kind of consultancy. His goal: build a group of companies capable of delivering complex projects with uncompromising precision and speed.
-                  </p>
-                  
-                  <p className="text-lg text-gray-300 leading-relaxed">
+                    </p>
+
+                    <p className="text-lg text-gray-300 leading-relaxed">
                     What started as a boutique consultancy quickly expanded under Ahmed’s leadership into a family of specialists covering engineering, construction, fit-out, landscaping, and smart technology. Each step was driven by the conviction that the region deserves partners who think bigger and execute faster.
-                  </p>
-                  
-                  <p className="text-lg text-gray-300 leading-relaxed">
+                    </p>
+
+                    <p className="text-lg text-gray-300 leading-relaxed">
                     Today, Onix Group stands as a young yet proven leader—engineered by Ahmed Al Kaddour’s vision, five years strong, future-ready, and committed to reshaping skylines across the UAE and beyond.
                   </p>
-                </div>
-              </div>
-              
+                        </div>
+                      </div>
+
               {/* Right Side - Featured Leader Photo */}
               <div className="relative">
                 <div className="w-full h-96 lg:h-[520px] rounded-[36px] overflow-hidden border-4 border-white/20 shadow-2xl">
@@ -234,7 +234,7 @@ export default function Timeline() {
               const isVisible = visibleCards[index]
 
               return (
-                <div
+            <div
                   key={event.title}
                   className="relative md:flex md:items-center md:justify-between"
                 >
@@ -266,8 +266,8 @@ export default function Timeline() {
                         </div>
                       ) : (
                         <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-blue-500/20 text-lg font-semibold text-blue-200 shadow-inner shadow-blue-500/30">
-                          {event.number}
-                        </div>
+                {event.number}
+              </div>
                       )}
                       <div className={`text-left ${isEven ? 'md:text-right' : ''}`}>
                         <span className="text-xs font-semibold uppercase tracking-[0.35em] text-blue-300">
@@ -301,11 +301,11 @@ export default function Timeline() {
                         ))}
                       </div>
                     )}
-                  </div>
+                    </div>
                 </div>
               )
             })}
-          </div>
+            </div>
         </div>
       </div>
 
@@ -314,8 +314,8 @@ export default function Timeline() {
         <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
           <h3 className="text-2xl font-bold text-white mb-4">Explore Our Leaders</h3>
           <p className="text-gray-300 mb-6">Meet the visionaries who have shaped our journey</p>
-          <Link 
-            href="/leaders" 
+          <Link
+            href="/leaders"
             className="inline-flex items-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105"
           >
             <span className="mr-2">Meet Our Leaders</span>
@@ -428,7 +428,7 @@ export default function Timeline() {
 
       {/* WhatsApp Floating Button */}
       <div className="fixed bottom-6 right-6 z-50">
-        <a 
+        <a
           href="https://wa.me/97142838880?text=Hello%20ONIX%20Group%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services"
           target="_blank"
           rel="noopener noreferrer"

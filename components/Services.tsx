@@ -50,7 +50,7 @@ export default function Services() {
             <path d="M24 10v28M10 24h28M16 16h4M16 20h4M16 24h4M16 28h4M16 32h16" strokeLinecap="round" />
             <path d="M30 16l6 6" strokeLinecap="round" />
             <circle cx="30" cy="18" r="2.5" fill="currentColor" />
-          </svg>
+        </svg>
         </div>
       ),
       features: ['Structural Design', 'Infrastructure Development', 'MEP Systems', 'Quality Assurance'],
@@ -68,7 +68,7 @@ export default function Services() {
             <path d="M18 30l4 4" strokeLinecap="round" />
             <rect x="10" y="32" width="28" height="6" rx="2" stroke="currentColor" />
             <path d="M15 34h6" strokeLinecap="round" />
-          </svg>
+        </svg>
         </div>
       ),
       features: ['Interior Design', 'Exterior Design', 'Architectural Design', '3D Visualization'],
@@ -85,7 +85,7 @@ export default function Services() {
             <path d="M14 18h20l4 6H10z" strokeLinejoin="round" />
             <path d="M20 22v6M28 22v6" strokeLinecap="round" />
             <rect x="18" y="10" width="12" height="6" rx="2" stroke="currentColor" />
-          </svg>
+        </svg>
         </div>
       ),
       features: ['Steel Fabrication', 'Metal Containers', 'Industrial Storage', 'Project Delivery'],
@@ -102,7 +102,7 @@ export default function Services() {
             <path d="M18 20h12M18 26h12M18 32h8" strokeLinecap="round" />
             <circle cx="30" cy="32" r="3" fill="currentColor" />
             <path d="M27 16h6l3 4H27z" strokeLinejoin="round" />
-          </svg>
+        </svg>
         </div>
       ),
       features: ['Tax Consultancy', 'Financial Planning', 'Accounting Services', 'Compliance Management'],

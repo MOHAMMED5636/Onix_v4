@@ -103,36 +103,36 @@ export default function Chatbot() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                     </svg>
                   </div>
-                  <div>
+              <div>
                     <h3 className="text-white font-bold text-base sm:text-lg">ONIX AI Assistant</h3>
                     <p className="text-blue-100 text-xs sm:text-sm mt-0.5">How can I help you today?</p>
                   </div>
-                </div>
-                <button
-                  onClick={() => setIsOpen(false)}
+              </div>
+              <button
+                onClick={() => setIsOpen(false)}
                   className="w-8 h-8 rounded-lg bg-white/20 hover:bg-white/30 text-white transition-all flex items-center justify-center"
-                  aria-label="Close chatbot"
-                >
+                aria-label="Close chatbot"
+              >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                   </svg>
-                </button>
+              </button>
               </div>
             </div>
             
             <div className="bg-gray-50 px-4 sm:px-5 py-3 border-b border-gray-200">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                {QUICK_PROMPTS.map((prompt) => (
-                  <button
-                    key={prompt}
-                    onClick={() => handleQuickPrompt(prompt)}
+              {QUICK_PROMPTS.map((prompt) => (
+                <button
+                  key={prompt}
+                  onClick={() => handleQuickPrompt(prompt)}
                     className="text-left px-3 py-2 rounded-lg bg-white border border-gray-200 hover:border-blue-300 hover:bg-blue-50 text-xs sm:text-sm text-gray-700 transition-all shadow-sm hover:shadow"
-                  >
-                    {prompt}
-                  </button>
-                ))}
-              </div>
+                >
+                  {prompt}
+                </button>
+              ))}
             </div>
+          </div>
 
           <div ref={containerRef} className="max-h-[320px] sm:max-h-[380px] md:max-h-[420px] overflow-y-auto px-4 sm:px-5 py-4 sm:py-5 space-y-4 bg-white">
             {messages.map((message, idx) => (
@@ -170,13 +170,13 @@ export default function Chatbot() {
 
           <div className="border-t border-gray-200 bg-gray-50 px-4 sm:px-5 py-4">
             <div className="flex gap-2">
-              <textarea
-                ref={textareaRef}
+            <textarea
+              ref={textareaRef}
                 placeholder="Type your message..."
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-                onKeyDown={handleKeyDown}
-                rows={2}
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyDown={handleKeyDown}
+              rows={2}
                 className="flex-1 resize-none rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
               />
               <button

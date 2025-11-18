@@ -599,7 +599,7 @@ export default function Hero() {
                         rel="noopener noreferrer"
                         className="flex h-8 w-8 items-center justify-center rounded-full bg-black text-white transition-all hover:scale-110 hover:bg-gray-900"
                         aria-label="Instagram"
-                      >
+                        >
                         <span className="text-xs font-semibold">ig</span>
                       </a>
                     </div>

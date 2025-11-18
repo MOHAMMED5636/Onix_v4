@@ -21,7 +21,7 @@ export default function Companies() {
       tagline: 'Accounting & Tax Consultancy LLC',
       services: [
         'Tax Consultancy',
-        'Financial Planning',
+        'Financial Planning', 
         'Accounting Services',
         'Audit Services',
         'Business Advisory',
@@ -66,7 +66,7 @@ export default function Companies() {
         'Quality Control',
         'Project Delivery'
       ],
-      logo: '/images/crimson-logo.png'
+      logo: '/images/CRIMSON 001[1].webp'
     }
   ]
 
@@ -99,7 +99,7 @@ export default function Companies() {
             >
               {/* Company Header */}
               <div className="text-center mb-4 sm:mb-6">
-                {['ONIX PRIME', 'ONIX DESIGN STUDIO', 'ONIX ENGINEERING CONSULTANCY', 'ONIX PLUS'].includes(company.name) ? (
+                {['ONIX PRIME', 'ONIX DESIGN STUDIO', 'ONIX ENGINEERING CONSULTANCY', 'ONIX PLUS', 'CRIMSON'].includes(company.name) ? (
                   <>
                     <div className={`mx-auto mb-2 sm:mb-3 flex items-center justify-center ${
                       company.name === 'ONIX PRIME'

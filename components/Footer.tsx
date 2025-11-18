@@ -191,16 +191,16 @@ export default function Footer() {
                 }
                 
                 return (
-                  <a
-                    key={social.label}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                <a
+                  key={social.label}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                     className="flex h-10 w-10 items-center justify-center rounded-full bg-black text-white transition-all hover:scale-110 hover:bg-gray-900"
                     aria-label={social.label}
-                  >
+                >
                     <span className="text-sm font-semibold">{getSymbol(social.label)}</span>
-                  </a>
+                </a>
                 )
               })}
             </div>
