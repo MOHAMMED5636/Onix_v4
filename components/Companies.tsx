@@ -10,7 +10,7 @@ export default function Companies() {
         'Infrastructure Development', 
         'MEP Systems',
         'Construction Management',
-        'Quality Assurance',
+        'Quality Assurance', 
         'Project Planning'
       ],
       logo: '/images/Onix.webp'
