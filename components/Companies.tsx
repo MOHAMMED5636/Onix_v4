@@ -35,7 +35,7 @@ export default function Companies() {
       services: [
         'Interior Design',
         'Exterior Design',
-        'Architectural Design',
+        'Architectural Design', 
         'Space Planning',
         '3D Visualization',
         'Design Consultation' 
