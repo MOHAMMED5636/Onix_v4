@@ -70,6 +70,45 @@ export default function Leaders() {
         "Consistently achieved on‑time, on‑budget outcomes",
       ],
     },
+    {
+      name: "Anas Ali",
+      title: "Director of Operations",
+      description:
+        "Anas leads ONIX operations across the GCC, aligning site execution, supply-chain efficiency, and client handovers with corporate strategy.",
+      image: "/images/rameez-kaddour.webp",
+      slug: "anas-ali",
+      achievements: [
+        "Scaled ONIX delivery network to 6 active markets",
+        "Implemented integrated site monitoring dashboards",
+        "Reduced procurement lead time by 28%",
+      ],
+    },
+    {
+      name: "Obada Hamada",
+      title: "Head of Smart Engineering",
+      description:
+        "Obada champions ONIX digital initiatives—integrating BIM, AI-assisted coordination, and smart facility infrastructure into every program.",
+      image: "/images/ahmed_al_kaddour.webp",
+      slug: "obada-hamada",
+      achievements: [
+        "Rolled out BIM-first delivery across all engineering teams",
+        "Introduced AI-driven QA/QC workflows for critical assets",
+        "Leads smart building retrofits for key clients",
+      ],
+    },
+    {
+      name: "Dia Zayoud",
+      title: "Commercial Director",
+      description:
+        "Dia drives ONIX commercial strategy—overseeing bids, partnerships, and financial governance to keep mega projects on track.",
+      image: "/images/nabil.webp",
+      slug: "dia-zayoud",
+      achievements: [
+        "Negotiated strategic alliances with regional developers",
+        "Built risk-managed cost control frameworks",
+        "Secured flagship mixed-use developments across MENA",
+      ],
+    },
   ];
 
   // Static leaders data used without CMS
@@ -168,7 +207,7 @@ export default function Leaders() {
 
       {/* Leaders Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 relative z-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {leaders.map((leader, index) => (
             <div key={index} className="group">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl">
@@ -178,16 +217,12 @@ export default function Leaders() {
                     <Image
                       src={leader.image}
                       alt={leader.name}
-                      className="w-full h-full object-cover object-top transform group-hover:scale-110 transition-transform duration-500"
+                      width={128}
+                      height={128}
+                      className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                       style={{
                         objectPosition:
-                          index === 0
-                            ? "50% 20%"
-                            : index === 2
-                            ? "50% 20%"
-                            : index === 3
-                            ? "50% 20%"
-                            : "50% 50%",
+                          leader.slug === "dia-zayoud" ? "50% 35%" : "50% 20%",
                       }}
                     />
                   </div>
@@ -347,7 +382,7 @@ export default function Leaders() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 uppercase tracking-wide">
-              STEP INTO THE WORLD OF ONIX GROUP OF COMPANIES
+              STEP INTO THE WORLD OF <span className="text-red-500">ONIX</span> GROUP OF COMPANIES
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
               Ready to start your next project?
@@ -385,7 +420,7 @@ export default function Leaders() {
                 </div>
                 <div>
                   <p className="text-white text-lg">
-                    123 Engineering Street, Business District, City 12345
+                    Mardoof Building, Gate B, Office 114<br />Sheikh Zayed Road, Al Safa 1, Dubai
                   </p>
                 </div>
               </div>
@@ -407,7 +442,7 @@ export default function Leaders() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-white text-lg">+1 (555) 123-4567</p>
+                  <p className="text-white text-lg">04 283 8880</p>
                 </div>
               </div>
 
@@ -428,7 +463,7 @@ export default function Leaders() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-white text-lg">Info@onixengineering.com</p>
+                  <p className="text-white text-lg">info@onixgroup.ae</p>
                 </div>
               </div>
 
@@ -518,6 +553,8 @@ export default function Leaders() {
                   <Image
                     src="/images/SAMMY.png"
                     alt="Sami Ibrahim"
+                    width={80}
+                    height={80}
                     className="w-20 h-20 rounded-full object-cover object-top"
                   />
                   <div>
@@ -694,7 +731,7 @@ export default function Leaders() {
                       />
                     </svg>
                     <span className="text-sm text-gray-700">
-                      +971 50 123 4567
+                      04 283 8880
                     </span>
                   </div>
                 </div>

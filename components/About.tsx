@@ -95,7 +95,7 @@ export default function About() {
                 <span className="text-sm sm:text-base font-medium text-white uppercase tracking-wider">Who We Are</span>
               </div>
               <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 sm:mb-8 uppercase tracking-wide drop-shadow-2xl">
-                Onix Group of Companies
+                <span className="text-red-500">ONIX</span> GROUP OF COMPANIES
               </h2>
               <div className="w-24 sm:w-40 h-1 bg-white mx-auto shadow-lg"></div>
             </div>
@@ -177,13 +177,14 @@ export default function About() {
             </div>
 
             {/* Leadership Team Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
               {[
                 {
                   name: 'Ahmed Al Kaddour',
                   title: 'Managing Director',
                   description: 'Civil Engineer with 25+ years of experience in Dubai. Ahmed leads ONIX Group with a delivery-first mindset, combining technical depth and proven leadership to drive growth across engineering and construction.',
                   image: '/images/ahmed_al_kaddour.webp',
+                  imagePosition: '50% 20%',
                   achievements: [
                     '25+ years delivering civil engineering projects in Dubai',
                     'Led multidisciplinary teams across major developments',
@@ -195,6 +196,7 @@ export default function About() {
                   title: 'Founder',
                   description: 'Founder of ONIX, specialized in Architecture and Civil Engineering with 15+ years of hands-on experience delivering high-impact projects.',
                   image: '/images/rameez-kaddour.webp',
+                  imagePosition: '50% 15%',
                   achievements: [
                     '15+ years across architecture and civil engineering',
                     'Delivered multi-disciplinary projects from concept to completion',
@@ -206,6 +208,7 @@ export default function About() {
                   title: 'Head of Design Department',
                   description: 'Architect with 10+ years of experience leading design across residential and commercial projects, driving concept-to-detail excellence at ONIX.',
                   image: '/images/kaddour.webp',
+                  imagePosition: '50% 20%',
                   achievements: [
                     '10+ years in architectural design leadership',
                     'Delivered award‑winning residential and commercial concepts',
@@ -217,10 +220,47 @@ export default function About() {
                   title: 'Head of ONIX PLUS',
                   description: 'Leads ONIX PLUS (Construction, Fit‑Out, and Landscaping). Focused on turning design and engineering strategies into reality with precision, quality, and on‑time delivery within budget.',
                   image: '/images/nabil.webp',
+                  imagePosition: '50% 25%',
                   achievements: [
                     'Delivered multi‑scope construction, fit‑out, and landscape projects',
                     'Built execution frameworks for quality and cost control',
                     'Consistently achieved on‑time, on‑budget outcomes'
+                  ]
+                },
+                {
+                  name: 'Anas Ali',
+                  title: 'Director of Operations',
+                  description: 'Anas aligns ONIX operations across the GCC, unifying execution, supply-chain agility, and client handovers.',
+                  image: '/images/rameez-kaddour.webp',
+                  imagePosition: '50% 25%',
+                  achievements: [
+                    'Scaled ONIX delivery teams across the GCC markets',
+                    'Integrated multi-discipline ops teams across mega projects',
+                    'Reduced procurement lead times by 25%'
+                  ]
+                },
+                {
+                  name: 'Obada Hamada',
+                  title: 'Head of Smart Engineering',
+                  description: 'Obada leads ONIX digital initiatives—embedding BIM, AI-driven coordination, and smart facility infrastructure into every program.',
+                  image: '/images/ahmed_al_kaddour.webp',
+                  imagePosition: '50% 20%',
+                  achievements: [
+                    'Rolled out BIM-first delivery across ONIX engineering teams',
+                    'Introduced AI-driven QA/QC workflows for critical assets',
+                    'Built smart building studio for key clients'
+                  ]
+                },
+                {
+                  name: 'Dia Zayoud',
+                  title: 'Commercial Director',
+                  description: 'Dia oversees commercial partnerships, bids, and financial governance to keep mega projects on track.',
+                  image: '/images/nabil.webp',
+                  imagePosition: '50% 35%',
+                  achievements: [
+                    'Negotiated strategic alliances with regional developers',
+                    'Built risk-managed cost control frameworks',
+                    'Secured flagship mixed-use developments across MENA'
                   ]
                 }
               ].map((leader, index) => (
@@ -234,8 +274,8 @@ export default function About() {
                           alt={leader.name}
                           width={128}
                           height={128}
-                          className="w-full h-full object-cover object-top transform group-hover:scale-110 transition-transform duration-500"
-                          style={{ objectPosition: index === 0 ? '50% 20%' : index === 1 ? '50% 10%' : index === 2 ? '50% 20%' : index === 3 ? '50% 20%' : '50% 50%' }}
+                          className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                          style={{ objectPosition: leader.imagePosition || '50% 20%' }}
                         />
                       </div>
                     </div>

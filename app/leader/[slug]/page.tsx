@@ -197,6 +197,8 @@ export default function LeaderPage() {
           <Image 
             src="/images/ONIX_LOGO.png" 
             alt="ONIX Logo" 
+            width={64}
+            height={64}
             className="w-16 h-16 object-contain"
           />
         </div>
@@ -214,6 +216,8 @@ export default function LeaderPage() {
                 <Image 
                   src={leader.image} 
                   alt={leader.name}
+                  width={192}
+                  height={192}
                   className="w-full h-full object-cover object-top"
                 />
               </div>

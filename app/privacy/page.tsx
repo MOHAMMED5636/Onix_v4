@@ -57,7 +57,7 @@ export default function PrivacyPolicy() {
           </p>
 
           <p className="text-gray-300 mb-6">
-            The notice of withdrawal of consent to the processing of personal data shall be sent to the following email address: info@onixengineering.com with the subject line: "Withdrawal of Consent to Personal Data Processing".
+            The notice of withdrawal of consent to the processing of personal data shall be sent to the following email address: info@onixgroup.ae with the subject line: "Withdrawal of Consent to Personal Data Processing".
           </p>
 
           <p className="text-gray-300 mb-4">
@@ -212,7 +212,7 @@ export default function PrivacyPolicy() {
           </p>
 
           <p className="text-gray-300 mb-4">
-            7.5. All suggestions or questions regarding this Privacy Policy should be communicated to the Operator using the following address: info@onixengineering.com
+            7.5. All suggestions or questions regarding this Privacy Policy should be communicated to the Operator using the following address: info@onixgroup.ae
           </p>
 
           <p className="text-gray-300 mb-8">

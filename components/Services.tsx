@@ -35,15 +35,23 @@ export default function Services() {
     target.appendChild(circle)
     setTimeout(() => circle.remove(), 650)
   }
+  const badgeBase =
+    'icon-badge w-12 h-12 sm:w-14 sm:h-14 mb-4 sm:mb-5 rounded-2xl flex items-center justify-center text-white shadow-xl border border-white/10 transition-all duration-300 relative overflow-hidden'
+
   const services = [
     {
       title: 'Engineering Services',
       description: 'Comprehensive engineering across structural, civil, and MEP disciplines.',
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-        </svg>
+        <div className={`${badgeBase} bg-gradient-to-br from-blue-500 to-cyan-400`}>
+          <div className="absolute inset-0 opacity-25 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.6),transparent_55%)]" />
+          <svg className="relative w-8 h-8" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 48 48">
+            <rect x="10" y="10" width="28" height="28" rx="4" stroke="currentColor" />
+            <path d="M24 10v28M10 24h28M16 16h4M16 20h4M16 24h4M16 28h4M16 32h16" strokeLinecap="round" />
+            <path d="M30 16l6 6" strokeLinecap="round" />
+            <circle cx="30" cy="18" r="2.5" fill="currentColor" />
+          </svg>
+        </div>
       ),
       features: ['Structural Design', 'Infrastructure Development', 'MEP Systems', 'Quality Assurance'],
       href: '/services/structural-engineering'
@@ -52,9 +60,16 @@ export default function Services() {
       title: 'Design Services',
       description: 'Creative architectural and interior design solutions tailored to your vision.',
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-        </svg>
+        <div className={`${badgeBase} bg-gradient-to-br from-purple-500 via-violet-500 to-pink-400`}>
+          <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_bottom,rgba(255,255,255,0.7),transparent_60%)]" />
+          <svg className="relative w-8 h-8" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 48 48">
+            <path d="M12 34l4-14 18-8 2 6-14 8z" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M28 12l4 4" strokeLinecap="round" />
+            <path d="M18 30l4 4" strokeLinecap="round" />
+            <rect x="10" y="32" width="28" height="6" rx="2" stroke="currentColor" />
+            <path d="M15 34h6" strokeLinecap="round" />
+          </svg>
+        </div>
       ),
       features: ['Interior Design', 'Exterior Design', 'Architectural Design', '3D Visualization'],
       href: '/services/structural-engineering'
@@ -63,9 +78,15 @@ export default function Services() {
       title: 'Steel Contracting',
       description: 'Specialized steel fabrication and contracting for construction and industry.',
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-        </svg>
+        <div className={`${badgeBase} bg-gradient-to-br from-slate-700 to-slate-500`}>
+          <div className="absolute inset-0 opacity-25 bg-[linear-gradient(135deg,rgba(255,255,255,0.4)_0,rgba(255,255,255,0)_55%)]" />
+          <svg className="relative w-8 h-8" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 48 48">
+            <path d="M12 34h24l-2-16H14z" strokeLinejoin="round" />
+            <path d="M14 18h20l4 6H10z" strokeLinejoin="round" />
+            <path d="M20 22v6M28 22v6" strokeLinecap="round" />
+            <rect x="18" y="10" width="12" height="6" rx="2" stroke="currentColor" />
+          </svg>
+        </div>
       ),
       features: ['Steel Fabrication', 'Metal Containers', 'Industrial Storage', 'Project Delivery'],
       href: '/services/project-management'
@@ -74,9 +95,15 @@ export default function Services() {
       title: 'Tax Consultation',
       description: 'Professional tax advisory and compliance services for individuals and businesses.',
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-        </svg>
+        <div className={`${badgeBase} bg-gradient-to-br from-amber-500 to-orange-400`}>
+          <div className="absolute inset-0 opacity-25 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.5),transparent_60%)]" />
+          <svg className="relative w-8 h-8" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 48 48">
+            <rect x="12" y="12" width="24" height="28" rx="3" stroke="currentColor" />
+            <path d="M18 20h12M18 26h12M18 32h8" strokeLinecap="round" />
+            <circle cx="30" cy="32" r="3" fill="currentColor" />
+            <path d="M27 16h6l3 4H27z" strokeLinejoin="round" />
+          </svg>
+        </div>
       ),
       features: ['Tax Consultancy', 'Financial Planning', 'Accounting Services', 'Compliance Management'],
       href: '/services/consultation'
@@ -109,7 +136,7 @@ export default function Services() {
               >
                 <div className="card-blob"></div>
                 <div className="relative z-10">
-                  <div className="card-icon text-black mb-3 sm:mb-4 flex items-center justify-center">{service.icon}</div>
+                  {service.icon}
                   <h3 className="text-lg sm:text-xl font-semibold text-white mb-2 sm:mb-3 group-hover:text-blue-400 transition-colors duration-300">{service.title}</h3>
                   <p className="text-sm sm:text-base text-gray-300 mb-3 sm:mb-4 group-hover:text-gray-200 transition-colors duration-300">{service.description}</p>
                   <ul className="space-y-1 sm:space-y-2">

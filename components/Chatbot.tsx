@@ -82,109 +82,145 @@ export default function Chatbot() {
   }
 
   return (
-    <div className="fixed bottom-6 left-6 z-[60] flex flex-col items-start gap-3">
+    <>
+      {/* Backdrop overlay that fades the website */}
       {isOpen && (
-        <div className="w-[320px] sm:w-[360px] overflow-hidden rounded-3xl border border-white/10 bg-gray-950/95 text-white shadow-[0_35px_70px_-40px_rgba(56,189,248,0.55)] backdrop-blur-xl">
-          <div className="relative border-b border-white/10 px-6 py-5">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.38),_transparent_72%)]" aria-hidden />
-            <div className="relative flex items-start justify-between gap-3">
-              <div>
-                <p className="text-xs uppercase tracking-[0.35em] text-blue-100/80">ONIX AI</p>
-                <p className="text-lg font-semibold mt-1">How can we help?</p>
-                <p className="mt-2 text-xs text-blue-100/75">
-                  Expert in engineering, construction, fit-out, and landscaping knowledge across ONIX Group.
-                </p>
-              </div>
-              <button
-                onClick={() => setIsOpen(false)}
-                className="rounded-full bg-white/10 p-2 text-gray-300 transition-all hover:bg-white/20"
-                aria-label="Close chatbot"
-              >
-                ×
-              </button>
-            </div>
-            <div className="relative mt-4 flex flex-wrap gap-2">
-              {QUICK_PROMPTS.map((prompt) => (
+        <div 
+          className="fixed inset-0 bg-gray-900/50 backdrop-blur-sm z-[55] transition-opacity duration-300"
+          onClick={() => setIsOpen(false)}
+          aria-hidden="true"
+        />
+      )}
+      
+      <div className="fixed bottom-4 left-4 md:bottom-6 md:left-6 z-[60] flex flex-col items-start gap-3">
+        {isOpen && (
+          <div className="w-[90vw] sm:w-[420px] md:w-[480px] lg:w-[540px] max-w-[calc(100vw-2rem)] overflow-hidden rounded-2xl bg-white shadow-2xl border border-gray-200 transform transition-all duration-300 translate-y-0 opacity-100">
+            <div className="bg-gradient-to-r from-blue-600 to-blue-700 px-5 sm:px-6 py-4 sm:py-5">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-white font-bold text-base sm:text-lg">ONIX AI Assistant</h3>
+                    <p className="text-blue-100 text-xs sm:text-sm mt-0.5">How can I help you today?</p>
+                  </div>
+                </div>
                 <button
-                  key={prompt}
-                  onClick={() => handleQuickPrompt(prompt)}
-                  className="rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-[11px] uppercase tracking-wide text-gray-200 transition-all hover:border-white/35 hover:bg-white/10"
+                  onClick={() => setIsOpen(false)}
+                  className="w-8 h-8 rounded-lg bg-white/20 hover:bg-white/30 text-white transition-all flex items-center justify-center"
+                  aria-label="Close chatbot"
                 >
-                  {prompt}
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
                 </button>
-              ))}
+              </div>
             </div>
-          </div>
+            
+            <div className="bg-gray-50 px-4 sm:px-5 py-3 border-b border-gray-200">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                {QUICK_PROMPTS.map((prompt) => (
+                  <button
+                    key={prompt}
+                    onClick={() => handleQuickPrompt(prompt)}
+                    className="text-left px-3 py-2 rounded-lg bg-white border border-gray-200 hover:border-blue-300 hover:bg-blue-50 text-xs sm:text-sm text-gray-700 transition-all shadow-sm hover:shadow"
+                  >
+                    {prompt}
+                  </button>
+                ))}
+              </div>
+            </div>
 
-          <div ref={containerRef} className="max-h-[320px] overflow-y-auto px-5 py-4 space-y-4 text-sm">
+          <div ref={containerRef} className="max-h-[320px] sm:max-h-[380px] md:max-h-[420px] overflow-y-auto px-4 sm:px-5 py-4 sm:py-5 space-y-4 bg-white">
             {messages.map((message, idx) => (
               <div
                 key={`${message.role}-${idx}`}
                 className={`flex ${message.role === 'user' ? 'justify-end' : 'justify-start'}`}
               >
                 <div
-                  className={`max-w-[85%] rounded-3xl px-4 py-3 leading-relaxed shadow-lg transition-all duration-300 ${
+                  className={`max-w-[85%] rounded-2xl px-4 py-3 leading-relaxed shadow-sm ${
                     message.role === 'user'
-                      ? 'bg-gradient-to-r from-blue-500 to-cyan-500 text-white'
-                      : 'bg-white/12 text-gray-100 backdrop-blur'
+                      ? 'bg-blue-600 text-white rounded-tr-none'
+                      : 'bg-gray-100 text-gray-800 rounded-tl-none border border-gray-200'
                   }`}
                 >
                   {message.content}
                 </div>
               </div>
             ))}
-            {isLoading && <div className="text-xs text-blue-200">Thinking…</div>}
+            {isLoading && (
+              <div className="flex items-center gap-2 text-sm text-gray-500">
+                <div className="flex gap-1">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></div>
+                  <div className="w-2 h-2 bg-blue-500 rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></div>
+                  <div className="w-2 h-2 bg-blue-500 rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></div>
+                </div>
+                <span>Thinking...</span>
+              </div>
+            )}
             {error && (
-              <div className="rounded-lg border border-red-500/30 bg-red-500/10 px-3 py-2 text-xs text-red-200">
+              <div className="rounded-lg border border-red-300 bg-red-50 px-4 py-3 text-sm text-red-700">
                 {error}
               </div>
             )}
           </div>
 
-          <div className="border-t border-white/10 px-5 py-4">
-            <textarea
-              ref={textareaRef}
-              placeholder="Ask about capabilities, availability, or next steps"
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              onKeyDown={handleKeyDown}
-              rows={2}
-              className="w-full resize-none rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-gray-400 focus:border-white/30 focus:outline-none focus:ring-0"
-            />
-            <div className="mt-3 flex items-center justify-between">
-              <button
-                onClick={() => setMessages([INITIAL_MESSAGE])}
-                className="text-xs text-gray-400 hover:text-gray-200 transition-colors"
-                type="button"
-              >
-                Reset conversation
-              </button>
+          <div className="border-t border-gray-200 bg-gray-50 px-4 sm:px-5 py-4">
+            <div className="flex gap-2">
+              <textarea
+                ref={textareaRef}
+                placeholder="Type your message..."
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+                onKeyDown={handleKeyDown}
+                rows={2}
+                className="flex-1 resize-none rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
+              />
               <button
                 onClick={handleSend}
                 type="button"
-                className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-xs font-semibold uppercase tracking-wide text-gray-900 transition-transform hover:scale-[1.03]"
-                disabled={isLoading}
+                disabled={isLoading || !input.trim()}
+                className="px-5 py-2.5 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center justify-center"
               >
-                Send ↗
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                </svg>
               </button>
             </div>
+            <button
+              onClick={() => setMessages([INITIAL_MESSAGE])}
+              className="mt-2 text-xs text-gray-500 hover:text-gray-700 transition-colors"
+              type="button"
+            >
+              Reset conversation
+            </button>
           </div>
         </div>
       )}
 
       <button
         onClick={() => setIsOpen((prev) => !prev)}
-        className="group relative flex items-center gap-3 rounded-full bg-gray-950/90 px-5 py-3 text-sm font-semibold text-white shadow-[0_25px_60px_-30px_rgba(56,189,248,0.65)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_30px_70px_-30px_rgba(56,189,248,0.75)]"
+        className={`group relative flex items-center gap-2.5 sm:gap-3 rounded-lg bg-white shadow-lg border border-gray-200 px-4 sm:px-5 py-2.5 sm:py-3 transition-all duration-300 hover:shadow-xl hover:scale-[1.02] ${isOpen ? 'bg-blue-50 border-blue-300' : ''}`}
       >
-        <span className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500/35 to-purple-500/35 opacity-60 transition-opacity duration-300 group-hover:opacity-90" aria-hidden />
-        <span className="absolute -left-1.5 -top-1.5 h-3 w-3 animate-ping rounded-full bg-emerald-400" aria-hidden />
-        <span className="absolute -left-1.5 -top-1.5 h-3 w-3 rounded-full bg-emerald-400" aria-hidden />
-        <span className="relative text-lg">🤖</span>
-        <div className="relative flex flex-col text-left">
-          <span className="text-[10px] uppercase tracking-[0.4em] text-blue-100/90">ONIX AI</span>
-          <span>{isOpen ? 'Close assistant' : 'Chat with us'}</span>
+        <div className="relative flex items-center gap-2.5">
+          <div className="relative">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-gradient-to-br from-blue-600 to-blue-700 flex items-center justify-center shadow-md">
+              <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+              </svg>
+            </div>
+            <span className="absolute -top-1 -right-1 h-3 w-3 sm:h-3.5 sm:w-3.5 rounded-full bg-green-500 border-2 border-white shadow-sm animate-pulse" aria-hidden />
+          </div>
+          <div className="flex flex-col text-left">
+            <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wide text-gray-700">ONIX AI</span>
+            <span className="text-xs sm:text-sm font-medium text-gray-600">{isOpen ? 'Close' : 'Chat with us'}</span>
+          </div>
         </div>
       </button>
     </div>
+    </>
   )
 }

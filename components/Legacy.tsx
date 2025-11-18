@@ -150,7 +150,7 @@ export default function Legacy() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 uppercase tracking-wide">
-              STEP INTO THE WORLD OF ONIX GROUP OF COMPANIES
+              STEP INTO THE WORLD OF <span className="text-red-500">ONIX</span> GROUP OF COMPANIES
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
               Ready to start your next project?
@@ -188,7 +188,7 @@ export default function Legacy() {
                 </div>
                 <div>
                   <p className="text-white text-lg">
-                    123 Engineering Street, Business District, City 12345
+                    Mardoof Building, Gate B, Office 114<br />Sheikh Zayed Road, Al Safa 1, Dubai
                   </p>
                 </div>
               </div>
@@ -210,7 +210,7 @@ export default function Legacy() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-white text-lg">+1 (555) 123-4567</p>
+                  <p className="text-white text-lg">04 283 8880</p>
                 </div>
               </div>
 
@@ -231,7 +231,7 @@ export default function Legacy() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-white text-lg">Info@onixengineering.com</p>
+                  <p className="text-white text-lg">info@onixgroup.ae</p>
                 </div>
               </div>
 

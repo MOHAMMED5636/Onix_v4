@@ -222,7 +222,7 @@ export default function CompaniesOverview() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 uppercase tracking-wide">
-              STEP INTO THE WORLD OF ONIX GROUP OF COMPANIES
+              STEP INTO THE WORLD OF <span className="text-red-500">ONIX</span> GROUP OF COMPANIES
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
               Ready to start your next project?<br />
@@ -242,7 +242,7 @@ export default function CompaniesOverview() {
                   </div>
                   <div>
                     <p className="text-white font-medium">Address</p>
-                    <p className="text-gray-300">123 Engineering Street, Business District, City 12345</p>
+                    <p className="text-gray-300">Mardoof Building, Gate B, Office 114<br />Sheikh Zayed Road, Al Safa 1, Dubai</p>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -251,7 +251,7 @@ export default function CompaniesOverview() {
                   </div>
                   <div>
                     <p className="text-white font-medium">Phone</p>
-                    <p className="text-gray-300">+1 (555) 123-4567</p>
+                    <p className="text-gray-300">04 283 8880</p>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -260,7 +260,7 @@ export default function CompaniesOverview() {
                   </div>
                   <div>
                     <p className="text-white font-medium">Email</p>
-                    <p className="text-gray-300">info@onixengineering.com</p>
+                    <p className="text-gray-300">info@onixgroup.ae</p>
                   </div>
                 </div>
                 <div className="flex items-center">

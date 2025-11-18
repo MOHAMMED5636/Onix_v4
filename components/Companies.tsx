@@ -13,11 +13,12 @@ export default function Companies() {
         'Quality Assurance',
         'Project Planning'
       ],
-      logo: '/images/onix-engineering-logo.png'
+      logo: '/images/Onix.webp'
     },
     {
       name: 'ONIX PRIME',
       description: 'Professional accounting and tax consultancy services providing comprehensive financial solutions.',
+      tagline: 'Accounting & Tax Consultancy LLC',
       services: [
         'Tax Consultancy',
         'Financial Planning',
@@ -26,7 +27,7 @@ export default function Companies() {
         'Business Advisory',
         'Compliance Management'
       ],
-      logo: '/images/onix-prime-logo.png'
+      logo: '/images/Onix Prime Logo White[1].webp'
     },
     {
       name: 'ONIX DESIGN STUDIO',
@@ -37,7 +38,7 @@ export default function Companies() {
         'Architectural Design',
         'Space Planning',
         '3D Visualization',
-        'Design Consultation'
+        'Design Consultation' 
       ],
       logo: '/images/onix-design-studio-logo.png'
     },
@@ -80,7 +81,7 @@ export default function Companies() {
             <span className="text-xs sm:text-sm font-medium text-white uppercase tracking-wider">Our Companies</span>
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 uppercase tracking-wide">
-            ONIX Group of Companies
+            <span className="text-red-500">ONIX</span> GROUP OF COMPANIES
           </h2>
           <div className="w-16 sm:w-24 h-1 bg-white mx-auto mb-6 sm:mb-8"></div>
           <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-4xl mx-auto">
@@ -98,15 +99,42 @@ export default function Companies() {
             >
               {/* Company Header */}
               <div className="text-center mb-4 sm:mb-6">
-                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-xl flex items-center justify-center mx-auto mb-3 sm:mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300 p-2">
-                  <Image 
-                    src={company.logo} 
-                    alt={`${company.name} Logo`}
-                    width={80}
-                    height={80}
-                    className="w-full h-full object-contain"
-                  />
-                </div>
+                {['ONIX PRIME', 'ONIX DESIGN STUDIO', 'ONIX ENGINEERING CONSULTANCY', 'ONIX PLUS'].includes(company.name) ? (
+                  <>
+                    <div className={`mx-auto mb-2 sm:mb-3 flex items-center justify-center ${
+                      company.name === 'ONIX PRIME'
+                        ? 'w-28 h-28 sm:w-36 sm:h-36'
+                        : company.name === 'ONIX DESIGN STUDIO'
+                        ? 'w-24 h-24 sm:w-32 sm:h-32'
+                        : company.name === 'ONIX ENGINEERING CONSULTANCY'
+                        ? 'w-24 h-24 sm:w-32 sm:h-32'
+                        : 'w-24 h-24 sm:w-32 sm:h-32'
+                    }`}>
+                      <Image
+                        src={company.logo}
+                        alt={`${company.name} Logo`}
+                        width={144}
+                        height={144}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    {company.tagline && (
+                      <p className="text-[10px] sm:text-xs uppercase tracking-widest text-blue-200 mb-2">
+                        {company.tagline}
+                      </p>
+                    )}
+                  </>
+                ) : (
+                  <div className="rounded-xl flex items-center justify-center mx-auto mb-2 sm:mb-3 shadow-lg group-hover:scale-110 transition-transform duration-300 border border-white/10 bg-transparent w-20 h-20 sm:w-24 sm:h-24 p-2">
+                    <Image
+                      src={company.logo}
+                      alt={`${company.name} Logo`}
+                      width={96}
+                      height={96}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                )}
                 <h3 className="text-base sm:text-lg lg:text-xl font-bold text-white mb-2 group-hover:text-white/90 transition-colors duration-300">
                   {company.name}
                 </h3>

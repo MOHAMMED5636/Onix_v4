@@ -131,11 +131,12 @@ header {
   transform: translateY(-6px);
   box-shadow: 0 20px 40px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.06) inset;
 }
-.card-animate .card-icon {
-  transition: transform 250ms ease;
+.card-animate .icon-badge {
+  transition: transform 250ms ease, box-shadow 250ms ease;
 }
-.card-animate:hover .card-icon {
-  transform: scale(1.12);
+.card-animate:hover .icon-badge {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(15,23,42,0.35);
 }
 
 /* Subtle animated blob background behind card */

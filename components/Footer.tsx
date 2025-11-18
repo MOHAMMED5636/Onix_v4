@@ -75,7 +75,7 @@ export default function Footer() {
                 Book a discovery call
               </a>
               <a
-                href="mailto:info@onixengineering.com"
+                href="mailto:info@onixgroup.ae"
                 className="inline-flex items-center justify-center rounded-full border border-white/35 px-6 py-3 text-sm font-semibold text-white transition-all hover:border-white hover:bg-white/10"
               >
                 Email our team
@@ -154,9 +154,9 @@ export default function Footer() {
               <div className="mt-6 space-y-1 text-sm text-gray-200/85">
                 <p className="flex items-center gap-2">
                   <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" aria-hidden />
-                  +971 50 123 4567
+                  +971 4 283 8880
                 </p>
-                <p>info@onixengineering.com</p>
+                <p>info@onixgroup.ae</p>
               </div>
             </div>
           </div>
@@ -170,18 +170,39 @@ export default function Footer() {
                 execution, and a culture of relentless client focus.
               </p>
             </div>
-            <div className="flex flex-wrap items-center gap-3 text-sm text-gray-100/85">
-              {socials.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-full border border-white/20 px-3 py-1 transition-colors hover:border-white hover:bg-white/10"
-                >
-                  {social.label}
-                </a>
-              ))}
+            <div className="flex flex-wrap items-center gap-3">
+              {socials.map((social) => {
+                // Get symbol for each social media platform
+                const getSymbol = (label: string) => {
+                  switch (label) {
+                    case 'LinkedIn':
+                      return 'in'
+                    case 'Instagram':
+                      return 'ig'
+                    case 'Facebook':
+                      return 'f'
+                    case 'Pinterest':
+                      return 'P'
+                    case 'TikTok':
+                      return 'd'
+                    default:
+                      return label.charAt(0)
+                  }
+                }
+                
+                return (
+                  <a
+                    key={social.label}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex h-10 w-10 items-center justify-center rounded-full bg-black text-white transition-all hover:scale-110 hover:bg-gray-900"
+                    aria-label={social.label}
+                  >
+                    <span className="text-sm font-semibold">{getSymbol(social.label)}</span>
+                  </a>
+                )
+              })}
             </div>
           </div>
         </div>

@@ -86,7 +86,7 @@ export default function ExplorePage() {
         </div>
 
         {/* Navigation Header */}
-        <div className="absolute top-0 left-0 right-0 z-20">
+        <div className="fixed top-0 left-0 right-0 z-20">
           <div className="flex items-center justify-between p-4 sm:p-6 lg:p-8">
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-3">
