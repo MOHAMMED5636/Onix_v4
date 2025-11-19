@@ -177,24 +177,12 @@ export default function About() {
             </div>
 
             {/* Leadership Team Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
               {[
                 {
-                  name: 'Ahmed Al Kaddour',
-                  title: 'Managing Director',
-                  description: 'Civil Engineer with 25+ years of experience in Dubai. Ahmed leads ONIX Group with a delivery-first mindset, combining technical depth and proven leadership to drive growth across engineering and construction.',
-                  image: '/images/ahmed_al_kaddour.webp',
-                  imagePosition: '50% 20%',
-                  achievements: [
-                    '25+ years delivering civil engineering projects in Dubai',
-                    'Led multidisciplinary teams across major developments',
-                    'Built long-term client relationships through quality and trust'
-                  ]
-                },
-                {
                   name: 'Rameez Kaddour',
-                  title: 'Founder',
-                  description: 'Founder of ONIX, specialized in Architecture and Civil Engineering with 15+ years of hands-on experience delivering high-impact projects.',
+                  title: 'Founder & CEO',
+                  description: 'Founder and CEO of ONIX, specialized in Architecture and Civil Engineering with 15+ years of hands-on experience delivering high-impact projects and steering the group\'s strategic vision.',
                   image: '/images/rameez-kaddour.webp',
                   imagePosition: '50% 15%',
                   achievements: [
@@ -205,8 +193,8 @@ export default function About() {
                 },
                 {
                   name: 'Kaddour Al Kaddour',
-                  title: 'Head of Design Department',
-                  description: 'Architect with 10+ years of experience leading design across residential and commercial projects, driving concept-to-detail excellence at ONIX.',
+                  title: 'General Manager, Onix Engineering',
+                  description: 'General Manager of Onix Engineering with 10+ years leading multidisciplinary teams, driving concept-to-detail excellence across residential and commercial projects.',
                   image: '/images/kaddour.webp',
                   imagePosition: '50% 20%',
                   achievements: [
@@ -217,8 +205,8 @@ export default function About() {
                 },
                 {
                   name: 'Nabil Al Kaddour',
-                  title: 'Head of ONIX PLUS',
-                  description: 'Leads ONIX PLUS (Construction, Fit‑Out, and Landscaping). Focused on turning design and engineering strategies into reality with precision, quality, and on‑time delivery within budget.',
+                  title: 'General Manager, ONIX PLUS',
+                  description: 'General Manager of ONIX PLUS (Construction, Fit‑Out, and Landscaping). Focused on turning design and engineering strategies into reality with precision, quality, and on‑time delivery within budget.',
                   image: '/images/nabil.webp',
                   imagePosition: '50% 25%',
                   achievements: [
@@ -228,10 +216,10 @@ export default function About() {
                   ]
                 },
                 {
-                  name: 'Anas Ali',
-                  title: 'Director of Operations',
-                  description: 'Anas aligns ONIX operations across the GCC, unifying execution, supply-chain agility, and client handovers.',
-                  image: '/images/rameez-kaddour.webp',
+                  name: 'Mamoun Al Hussien',
+                  title: 'General Manager, ONIX Design Studio',
+                  description: 'Mamoun leads ONIX Design Studio, overseeing multidisciplinary interior and architectural teams to deliver signature spaces across the GCC.',
+                  image: '/images/mamoun.webp',
                   imagePosition: '50% 25%',
                   achievements: [
                     'Scaled ONIX delivery teams across the GCC markets',
@@ -240,10 +228,22 @@ export default function About() {
                   ]
                 },
                 {
-                  name: 'Obada Hamada',
-                  title: 'Head of Smart Engineering',
-                  description: 'Obada leads ONIX digital initiatives—embedding BIM, AI-driven coordination, and smart facility infrastructure into every program.',
-                  image: '/images/ahmed_al_kaddour.webp',
+                  name: 'Anas Ali',
+                  title: 'General Manager, CRIMSON',
+                  description: 'Anas leads CRIMSON, overseeing specialized steel fabrication and industrial container operations with a focus on delivery speed and quality.',
+                  image: '/images/Anas.webp',
+                  imagePosition: '50% 20%',
+                  achievements: [
+                    'Negotiated strategic alliances with regional developers',
+                    'Built risk-managed cost control frameworks',
+                    'Secured flagship mixed-use developments across MENA'
+                  ]
+                },
+                {
+                  name: 'Obadam Saad Hamada',
+                  title: 'General Manager, ONIX Prime',
+                  description: 'Obadam leads ONIX Prime, overseeing accounting and tax consultancy operations with a focus on digital transformation, data accuracy, and high-touch client service.',
+                  image: '/images/Obada.webp',
                   imagePosition: '50% 20%',
                   achievements: [
                     'Rolled out BIM-first delivery across ONIX engineering teams',
@@ -252,11 +252,11 @@ export default function About() {
                   ]
                 },
                 {
-                  name: 'Dia Zayoud',
-                  title: 'Commercial Director',
-                  description: 'Dia oversees commercial partnerships, bids, and financial governance to keep mega projects on track.',
-                  image: '/images/nabil.webp',
-                  imagePosition: '50% 35%',
+                  name: 'Diaa Zayoud',
+                  title: 'General Manager, ONIX Engineering Abu Dhabi',
+                  description: 'Diaa leads ONIX Engineering Abu Dhabi, coordinating structural, infrastructure, and MEP delivery with a hands-on approach to client success.',
+                  image: '/images/Dia.webp',
+                  imagePosition: '50% 25%',
                   achievements: [
                     'Negotiated strategic alliances with regional developers',
                     'Built risk-managed cost control frameworks',
@@ -264,11 +264,14 @@ export default function About() {
                   ]
                 }
               ].map((leader, index) => (
-                <div key={index} className="group">
-                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl">
+                <div
+                  key={index}
+                  className={`group ${index === 6 ? 'lg:col-start-2' : ''}`}
+                >
+                  <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl min-h-[380px] flex flex-col">
                     {/* Leader Photo */}
-                    <div className="mb-4">
-                      <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-white/30 shadow-xl">
+                    <div className="mb-6">
+                      <div className="w-40 h-40 mx-auto rounded-full overflow-hidden border-4 border-white/30 shadow-xl">
                         <Image 
                           src={leader.image} 
                           alt={leader.name}
