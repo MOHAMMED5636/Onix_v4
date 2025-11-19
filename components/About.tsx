@@ -113,19 +113,19 @@ export default function About() {
             <div className="grid grid-cols-2 gap-8 sm:gap-12 md:gap-16 max-w-5xl mx-auto">
               <div className="text-center group">
                 <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-3 sm:mb-4 group-hover:text-white/90 transition-colors duration-300 drop-shadow-2xl">
-                  <AnimatedNumber end={500} suffix="+" duration={2500} />
+                  <AnimatedNumber end={400} suffix="+" duration={2500} />
                 </div>
                 <div className="text-white/90 font-semibold uppercase tracking-wide text-base sm:text-lg drop-shadow-lg">Ongoing Projects</div>
               </div>
               <div className="text-center group">
                 <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-3 sm:mb-4 group-hover:text-white/90 transition-colors duration-300 drop-shadow-2xl">
-                  <AnimatedNumber end={15} suffix="+" duration={2000} />
+                  <AnimatedNumber end={5} duration={2000} />
                 </div>
                 <div className="text-white/90 font-semibold uppercase tracking-wide text-base sm:text-lg drop-shadow-lg">Years Experience</div>
               </div>
               <div className="text-center group">
                 <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-3 sm:mb-4 group-hover:text-white/90 transition-colors duration-300 drop-shadow-2xl">
-                  <AnimatedNumber end={10} suffix="+" duration={1500} />
+                  <AnimatedNumber end={5} suffix="+" duration={1500} />
                 </div>
                 <div className="text-white/90 font-semibold uppercase tracking-wide text-base sm:text-lg drop-shadow-lg">Companies</div>
               </div>
@@ -299,7 +299,7 @@ export default function About() {
                         </ul>
                       </div>
                     </div>
-                  </div>
+                  </div> 
                 </div>
               ))}
             </div>
