@@ -644,7 +644,7 @@ export default function Hero() {
           <div className="max-w-2xl md:max-w-3xl lg:max-w-4xl">
             {/* Main Title */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light text-white mb-4 sm:mb-6 leading-tight">
-              EXPECT MORE. ACHIEVE BEYOND
+              <span className="text-red-500">EXPECT MORE</span>. ACHIEVE BEYOND
             </h1>
 
             {/* Subtitle */}

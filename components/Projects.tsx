@@ -40,6 +40,15 @@ export default function Projects() {
     }
   ]
 
+  const projectVideo = {
+    title: 'ONIX Group Signature Reel',
+    description: 'A fast-paced overview of the design language, engineering capacity, and collaborative culture behind every ONIX commission.',
+    src: 'https://player.cloudinary.com/embed/?cloud_name=dhq6qrrph&public_id=Onix_Group_Comp_vwvdir&profile=cld-default',
+    poster: '/images/ONIX Engineering Consultancy White.webp',
+    tag: 'Brand Film',
+    duration: '1:12'
+  }
+
   // Refs for animation items
   const projectItemsRef = useRef<(HTMLDivElement | null)[]>([])
 
@@ -70,6 +79,30 @@ export default function Projects() {
     <>
     <section id="projects" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto mb-16">
+          <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 via-white/5 to-transparent p-1 shadow-2xl shadow-blue-500/20 backdrop-blur">
+            <div className="relative rounded-[26px] bg-black p-4 sm:p-6">
+              <div className="flex items-center justify-between mb-4 text-xs uppercase tracking-[0.2em] text-white/60">
+                <span className="px-3 py-1 rounded-full border border-white/20">{projectVideo.tag}</span>
+                <span className="text-white/70">{projectVideo.duration}</span>
+              </div>
+              <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-white/10">
+                <iframe
+                  src={projectVideo.src}
+                  className="h-full w-full"
+                  allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+                  allowFullScreen
+                />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+              </div>
+              <div className="mt-6 space-y-2">
+                <h3 className="text-2xl font-semibold text-white">{projectVideo.title}</h3>
+                <p className="text-sm text-white/70">{projectVideo.description}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4 uppercase tracking-wide">Featured Projects</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
