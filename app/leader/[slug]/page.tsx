@@ -71,43 +71,43 @@ export default function LeaderPage() {
       },
       'kaddour-al-kaddour': {
         name: 'Kaddour Al Kaddour',
-        title: 'Founding Chairman',
-        description: 'The visionary founder who laid the foundation of Onix Group, Kaddour\'s entrepreneurial spirit and unwavering commitment to quality have been the cornerstone of our success story.',
+        title: 'General Manager, ONIX Engineering',
+        description: 'As General Manager of ONIX Engineering, Kaddour leads multi-disciplinary design and delivery teams, ensuring every project meets the firm’s standards for innovation and technical excellence.',
         image: '/images/kaddour.webp',
         achievements: [
-          'Founded Onix Group in 1995',
-          'Established company values and culture',
-          'Mentored next generation of leaders'
+          'Scaled ONIX Engineering operations across the GCC',
+          'Delivered award-winning residential and hospitality projects',
+          'Championed BIM-first collaboration and QA discipline'
         ],
-        bio: 'Kaddour Al Kaddour is the visionary founder of Onix Group. His entrepreneurial spirit, combined with his unwavering commitment to quality and innovation, has been the cornerstone of the company\'s success for nearly three decades.',
+        bio: 'Kaddour Al Kaddour directs ONIX Engineering’s day-to-day operations, combining architectural vision with engineering rigor. His leadership aligns concept development, design detailing, and site execution so that clients experience seamless delivery from brief to handover.',
         experience: [
-          '30+ years in business leadership',
-          'Founded and grew Onix Group from startup',
-          'Established company culture and values',
-          'Mentored multiple generations of leaders'
+          '12+ years leading multi-disciplinary engineering teams',
+          'Oversaw 150+ design-and-build programs',
+          'Implemented BIM coordination across 100% of projects',
+          'Mentors the next generation of technical leads'
         ],
-        education: 'Bachelor of Engineering, Civil Engineering',
-        certifications: ['Chartered Engineer', 'Business Leadership Certified', 'Innovation Management']
+        education: 'Bachelor of Architecture, Specialized in Integrated Design',
+        certifications: ['Chartered Architect', 'BIM Management Certified', 'Project Leadership Program']
       },
       'nabil-al-kaddour': {
         name: 'Nabil Al Kaddour',
-        title: 'Chief Financial Officer',
-        description: 'A financial strategist par excellence, Nabil has steered the company through dynamic market conditions with prudent fiscal management and forward-thinking investment strategies.',
+        title: 'General Manager, ONIX PLUS',
+        description: 'Nabil heads ONIX PLUS, unifying contracting, fit-out, and landscaping into a seamless execution arm that delivers turnkey packages from groundworks to final handover.',
         image: '/images/nabil.webp',
         achievements: [
-          'Maintained financial stability through market cycles',
-          'Secured major funding for expansion',
-          'Implemented advanced financial systems'
+          'Delivered multi-scope construction, fit-out, and landscape projects',
+          'Built execution frameworks for quality and cost control',
+          'Consistently achieved on-time, on-budget outcomes'
         ],
-        bio: 'Nabil Al Kaddour is a financial strategist with exceptional expertise in fiscal management. His prudent approach to financial planning and his ability to navigate complex market conditions have ensured the company\'s financial stability and growth.',
+        bio: 'As General Manager of ONIX PLUS, Nabil Al Kaddour leads multidisciplinary delivery teams, ensuring every project aligns design intent with flawless execution. His focus on process discipline and client coordination keeps complex scopes moving with precision.',
         experience: [
-          '22+ years in financial management',
-          'Secured $500M+ in funding',
-          'Maintained financial stability through 3 market cycles',
-          'Implemented advanced financial systems'
+          '15+ years in design-build and turnkey project management',
+          'Scaled integrated fit-out and landscaping crews across the GCC',
+          'Implemented cross-functional QA/QC playbooks',
+          'Managed portfolio of hospitality, residential, and civic projects'
         ],
-        education: 'Master of Finance, Financial Management',
-        certifications: ['Chartered Financial Analyst', 'Certified Public Accountant', 'Financial Risk Management']
+        education: 'Bachelor of Civil Engineering, Construction Management focus',
+        certifications: ['PMP Certified', 'Lean Construction Practitioner', 'Integrated Project Delivery (IPD) Certification']
       }
     }
 

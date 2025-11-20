@@ -68,7 +68,7 @@ export default function CareersPage() {
     <div className="relative min-h-screen overflow-hidden">
       <video
         className="fixed inset-0 h-full w-full object-cover -z-20"
-        src="/videos/landscape.mp4"
+        src="https://res.cloudinary.com/dhq6qrrph/video/upload/v1763626205/landscape_etwx1y.webm"
         autoPlay
         muted
         loop

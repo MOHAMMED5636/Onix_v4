@@ -53,6 +53,107 @@ export default function About() {
     return <span>{count}{suffix}</span>
   }
 
+  const leadershipTeam = [
+    {
+      name: 'Rameez Kaddour',
+      title: 'Founder & CEO',
+      description:
+        'Founder and CEO of ONIX, specialized in Architecture and Civil Engineering with 15+ years of hands-on experience delivering high-impact projects and steering the group\'s strategic vision.',
+      image: '/images/rameez-kaddour.webp',
+      imagePosition: '50% 15%',
+      accent: '#f9dfe7',
+      achievements: [
+        '15+ years across architecture and civil engineering',
+        'Delivered multi-disciplinary projects from concept to completion',
+        'Built a culture focused on quality, innovation, and client success'
+      ]
+    },
+    {
+      name: 'Kaddour Al Kaddour',
+      title: 'General Manager, Onix Engineering',
+      description:
+        'General Manager of Onix Engineering with 10+ years leading multidisciplinary teams, driving concept-to-detail excellence across residential and commercial projects.',
+      image: '/images/kaddour.webp',
+      imagePosition: '50% 20%',
+      accent: '#f4efe6',
+      achievements: [
+        '10+ years in architectural design leadership',
+        'Delivered award‑winning residential and commercial concepts',
+        'Championed high standards in detailing and client experience'
+      ]
+    },
+    {
+      name: 'Nabil Al Kaddour',
+      title: 'General Manager, ONIX PLUS',
+      description:
+        'General Manager of ONIX PLUS (Construction, Fit‑Out, and Landscaping). Focused on turning design and engineering strategies into reality with precision, quality, and on‑time delivery within budget.',
+      image: '/images/nabil.webp',
+      imagePosition: '50% 25%',
+      accent: '#fff2c9',
+      achievements: [
+        'Delivered multi‑scope construction, fit‑out, and landscape projects',
+        'Built execution frameworks for quality and cost control',
+        'Consistently achieved on‑time, on‑budget outcomes'
+      ]
+    },
+    {
+      name: 'Mamoun Al Hussien',
+      title: 'General Manager, ONIX Design Studio',
+      description:
+        'Mamoun leads ONIX Design Studio, overseeing multidisciplinary interior and architectural teams to deliver signature spaces across the GCC.',
+      image: '/images/mamoun.webp',
+      imagePosition: '50% 25%',
+      accent: '#e6f0ff',
+      achievements: [
+        'Scaled ONIX delivery teams across the GCC markets',
+        'Integrated multi-discipline ops teams across mega projects',
+        'Reduced procurement lead times by 25%'
+      ]
+    },
+    {
+      name: 'Anas Ali',
+      title: 'General Manager, CRIMSON',
+      description:
+        'Anas leads CRIMSON, overseeing specialized steel fabrication and industrial container operations with a focus on delivery speed and quality.',
+      image: '/images/Anas.webp',
+      imagePosition: '50% 20%',
+      accent: '#ffe3d5',
+      achievements: [
+        'Negotiated strategic alliances with regional developers',
+        'Built risk-managed cost control frameworks',
+        'Secured flagship mixed-use developments across MENA'
+      ]
+    },
+    {
+      name: 'Obadam Saad Hamada',
+      title: 'General Manager, ONIX Prime',
+      description:
+        'Obadam leads ONIX Prime, overseeing accounting and tax consultancy operations with a focus on digital transformation, data accuracy, and high-touch client service.',
+      image: '/images/Obada.webp',
+      imagePosition: '50% 20%',
+      accent: '#f3e8ff',
+      achievements: [
+        'Rolled out BIM-first delivery across ONIX engineering teams',
+        'Introduced AI-driven QA/QC workflows for critical assets',
+        'Built smart building studio for key clients'
+      ]
+    },
+    {
+      name: 'Diaa Zayoud',
+      title: 'General Manager, ONIX Engineering Abu Dhabi',
+      description:
+        'Diaa leads ONIX Engineering Abu Dhabi, coordinating structural, infrastructure, and MEP delivery with a hands-on approach to client success.',
+      image: '/images/Dia.webp',
+      imagePosition: '50% 25%',
+      accent: '#e0f6ff',
+      achievements: [
+        'Negotiated strategic alliances with regional developers',
+        'Built risk-managed cost control frameworks',
+        'Secured flagship mixed-use developments across MENA'
+      ]
+    }
+  ]
+
   return (
     <>
       {/* Who We Are Section */}
@@ -79,6 +180,7 @@ export default function About() {
               muted
               playsInline
               className="w-full h-full object-cover"
+              style={{ objectPosition: 'center 30%' }}
             >
               <source src="https://res.cloudinary.com/dhq6qrrph/video/upload/v1763549535/Employees_Reel_siopre.webm" type="video/mp4" />
             </video>
@@ -151,7 +253,7 @@ export default function About() {
             playsInline
             className="w-full h-full object-cover"
           >
-            <source src="https://res.cloudinary.com/dhq6qrrph/video/upload/v1763555938/003_owkxwt.webm" type="video/mp4" />
+            <source src="" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/80 to-transparent"></div>
         </div>
@@ -178,118 +280,42 @@ export default function About() {
 
             {/* Leadership Team Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
-              {[
-                {
-                  name: 'Rameez Kaddour',
-                  title: 'Founder & CEO',
-                  description: 'Founder and CEO of ONIX, specialized in Architecture and Civil Engineering with 15+ years of hands-on experience delivering high-impact projects and steering the group\'s strategic vision.',
-                  image: '/images/rameez-kaddour.webp',
-                  imagePosition: '50% 15%',
-                  achievements: [
-                    '15+ years across architecture and civil engineering',
-                    'Delivered multi-disciplinary projects from concept to completion',
-                    'Built a culture focused on quality, innovation, and client success'
-                  ]
-                },
-                {
-                  name: 'Kaddour Al Kaddour',
-                  title: 'General Manager, Onix Engineering',
-                  description: 'General Manager of Onix Engineering with 10+ years leading multidisciplinary teams, driving concept-to-detail excellence across residential and commercial projects.',
-                  image: '/images/kaddour.webp',
-                  imagePosition: '50% 20%',
-                  achievements: [
-                    '10+ years in architectural design leadership',
-                    'Delivered award‑winning residential and commercial concepts',
-                    'Championed high standards in detailing and client experience'
-                  ]
-                },
-                {
-                  name: 'Nabil Al Kaddour',
-                  title: 'General Manager, ONIX PLUS',
-                  description: 'General Manager of ONIX PLUS (Construction, Fit‑Out, and Landscaping). Focused on turning design and engineering strategies into reality with precision, quality, and on‑time delivery within budget.',
-                  image: '/images/nabil.webp',
-                  imagePosition: '50% 25%',
-                  achievements: [
-                    'Delivered multi‑scope construction, fit‑out, and landscape projects',
-                    'Built execution frameworks for quality and cost control',
-                    'Consistently achieved on‑time, on‑budget outcomes'
-                  ]
-                },
-                {
-                  name: 'Mamoun Al Hussien',
-                  title: 'General Manager, ONIX Design Studio',
-                  description: 'Mamoun leads ONIX Design Studio, overseeing multidisciplinary interior and architectural teams to deliver signature spaces across the GCC.',
-                  image: '/images/mamoun.webp',
-                  imagePosition: '50% 25%',
-                  achievements: [
-                    'Scaled ONIX delivery teams across the GCC markets',
-                    'Integrated multi-discipline ops teams across mega projects',
-                    'Reduced procurement lead times by 25%'
-                  ]
-                },
-                {
-                  name: 'Anas Ali',
-                  title: 'General Manager, CRIMSON',
-                  description: 'Anas leads CRIMSON, overseeing specialized steel fabrication and industrial container operations with a focus on delivery speed and quality.',
-                  image: '/images/Anas.webp',
-                  imagePosition: '50% 20%',
-                  achievements: [
-                    'Negotiated strategic alliances with regional developers',
-                    'Built risk-managed cost control frameworks',
-                    'Secured flagship mixed-use developments across MENA'
-                  ]
-                },
-                {
-                  name: 'Obadam Saad Hamada',
-                  title: 'General Manager, ONIX Prime',
-                  description: 'Obadam leads ONIX Prime, overseeing accounting and tax consultancy operations with a focus on digital transformation, data accuracy, and high-touch client service.',
-                  image: '/images/Obada.webp',
-                  imagePosition: '50% 20%',
-                  achievements: [
-                    'Rolled out BIM-first delivery across ONIX engineering teams',
-                    'Introduced AI-driven QA/QC workflows for critical assets',
-                    'Built smart building studio for key clients'
-                  ]
-                },
-                {
-                  name: 'Diaa Zayoud',
-                  title: 'General Manager, ONIX Engineering Abu Dhabi',
-                  description: 'Diaa leads ONIX Engineering Abu Dhabi, coordinating structural, infrastructure, and MEP delivery with a hands-on approach to client success.',
-                  image: '/images/Dia.webp',
-                  imagePosition: '50% 25%',
-                  achievements: [
-                    'Negotiated strategic alliances with regional developers',
-                    'Built risk-managed cost control frameworks',
-                    'Secured flagship mixed-use developments across MENA'
-                  ]
-                }
-              ].map((leader, index) => (
+              {leadershipTeam.map((leader, index) => (
                 <div
-                  key={index}
-                  className={`group ${index === 6 ? 'lg:col-start-2' : ''}`}
+                  key={leader.name}
+                  className={`group ${index === leadershipTeam.length - 1 ? 'lg:col-start-2' : ''}`}
                 >
-                  <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl min-h-[380px] flex flex-col">
-                    {/* Leader Photo */}
-                    <div className="mb-6">
-                      <div className="w-40 h-40 mx-auto rounded-full overflow-hidden border-4 border-white/30 shadow-xl">
-                        <Image 
-                          src={leader.image} 
-                          alt={leader.name}
-                          width={128}
-                          height={128}
-                          className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
-                          style={{ objectPosition: leader.imagePosition || '50% 20%' }}
-                        />
-                      </div>
+                  <div
+                    className="relative flex flex-col items-center text-center rounded-[56px] px-8 py-10 shadow-2xl border border-white/20 transition-transform duration-500 hover:-translate-y-2"
+                    style={{ backgroundColor: leader.accent }}
+                  >
+                    <div className="absolute inset-x-8 top-8 flex justify-center text-[10px] uppercase tracking-[0.4em] text-slate-500/80 pointer-events-none">
+                      <span>Leadership</span>
                     </div>
-
-                    {/* Leader Info */}
-                    <div className="text-center">
-                      <h3 className="text-xl font-bold text-white mb-1">{leader.name}</h3>
-                      <p className="text-sm text-blue-300 mb-3 font-medium">{leader.title}</p>
-                      <p className="text-gray-300 leading-relaxed text-sm">{leader.description}</p>
+                    <div className="mt-10 w-36 h-36 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                      <Image
+                        src={leader.image}
+                        alt={leader.name}
+                        width={144}
+                        height={144}
+                        className="w-full h-full object-cover"
+                        style={{ objectPosition: leader.imagePosition || '50% 20%' }}
+                      />
                     </div>
-                  </div> 
+                    <h3 className="mt-8 text-2xl font-semibold text-slate-900">{leader.name}</h3>
+                    <p className="text-sm uppercase tracking-wide text-slate-600 mb-4">{leader.title}</p>
+                    <p className="text-base text-slate-700 leading-relaxed">{leader.description}</p>
+                    <div className="mt-6 flex flex-wrap justify-center gap-2">
+                      {leader.achievements.map((achievement) => (
+                        <span
+                          key={achievement}
+                          className="text-xs font-semibold tracking-wide px-4 py-2 rounded-full bg-white/80 text-slate-800 backdrop-blur"
+                        >
+                          {achievement}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>

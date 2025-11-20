@@ -32,9 +32,9 @@ export default function Hero() {
   return (
     <>
       {/* Hero Section */}
-      <section className="hero-fullscreen relative">
+      <section className="hero-fullscreen relative pt-20 sm:pt-24">
         {/* Glass Header Container */}
-        <div className="absolute top-0 left-0 right-0 z-50">
+        <div className="fixed top-0 left-0 right-0 z-50">
           {/* Glassmorphism Header Background */}
           <div className="bg-white/5 backdrop-blur-md border-b border-white/10 shadow-lg">
             <div className="w-full px-4 sm:px-6 lg:px-8">
@@ -412,14 +412,9 @@ export default function Hero() {
                         height={240}
                         className="h-14 w-auto object-contain"
                       />
-                      <div className="flex flex-col">
-                        <span className="text-white font-bold text-lg tracking-wide">
-                          ONIX GROUP
-                        </span>
-                        <span className="text-white/70 text-xs font-light tracking-wider">
-                          ENGINEERING | CONSTRUCTION
-                        </span>
-                      </div>
+                      <span className="text-white text-xs font-light tracking-wide uppercase">
+                        Engineering | Construction
+                      </span>
                     </div>
                     <button
                       onClick={() => setShowMobileMenu(false)}
@@ -442,7 +437,7 @@ export default function Hero() {
                   </div>
 
                   {/* Glassmorphism Menu Items */}
-                  <nav className="flex-1 space-y-2">
+                  <nav className="flex-1 space-y-2 overflow-y-auto hide-scrollbar pr-1">
                     <button
                       onClick={() => {
                         setShowMobileMenu(false);

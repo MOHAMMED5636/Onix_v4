@@ -29,12 +29,12 @@ export default function Timeline() {
     },
     {
       number: '02',
-      title: 'Design Innovation Led by Kaddour Al Kaddour',
+      title: 'Engineering Excellence Led by Kaddour Al Kaddour',
       description:
-        '2022 marked a new design benchmark. Kaddour Al Kaddour took the helm of architecture, introducing multi-disciplinary design sprints and BIM-first delivery that won awards across residential and hospitality projects.',
+        'In 2022, Kaddour Al Kaddour stepped in as General Manager of ONIX Engineering, unifying structural, architectural, and MEP teams around BIM-first delivery. His integrated leadership accelerated design sprints and raised quality benchmarks across every sector.',
       image: '/images/kaddour.webp',
       person: 'Kaddour Al Kaddour',
-      role: 'Head of Architecture',
+      role: 'General Manager, ONIX Engineering',
       year: '2022',
       stats: ['27 flagship concepts delivered', 'Design QA time -45%', 'BIM coordination across 100% projects']
     },
@@ -45,31 +45,53 @@ export default function Timeline() {
         'With the launch of ONIX PLUS in 2023, Nabil Al Kaddour unified contracting, fit-out, and landscaping into one execution engine. The team now delivers turnkey packages from groundworks to final handover.',
       image: '/images/nabil.webp',
       person: 'Nabil Al Kaddour',
-      role: 'Head of ONIX PLUS',
+      role: 'General Manager, ONIX PLUS',
       year: '2023',
       stats: ['18 multi-scope projects delivered', 'Average delivery time -28%', 'Integrated fit-out & landscaping crews']
     },
     {
       number: '04',
-      title: 'AI and Smart Technology Integration',
+      title: 'Design Innovation – ONIX Design Studio',
       description:
-        'In 2024 we embedded AI models into planning, quantity take-offs, and site reporting. Predictive maintenance and smart dashboards now power daily coordination with clients and suppliers.',
-      image: 'https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      person: 'Digital Transformation Office',
-      role: 'AI & Data Ops',
+        'Under General Manager Mamoun Al Hussien, ONIX Design Studio rolled out integrated concept labs across the GCC, combining interior, architectural, and experiential design into one interdisciplinary workflow.',
+      image: '/images/mamoun.webp',
+      person: 'Mamoun Al Hussien',
+      role: 'General Manager, ONIX Design Studio',
       year: '2024',
-      stats: ['Predictive maintenance on 25 sites', 'Auto-generated reports in <15 min', 'Smart dashboards for all stakeholders']
+      stats: ['Signature design labs launched', 'Turnaround time -22%', 'Cross-discipline ops teams synced']
     },
     {
       number: '05',
-      title: 'Future-Ready Engineering Solutions',
+      title: 'Crimson Steel Contracting Expansion',
       description:
-        'Looking ahead to 2025, we are scaling modular construction, net-zero strategies, and next-gen materials to keep Onix at the forefront of sustainable engineering.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      person: 'Onix Futures Lab',
-      role: 'Innovation Program',
+        'Anas Ali, General Manager of CRIMSON, scaled the specialized steel contracting division with rapid-delivery containerized solutions and high-precision fabrication for GCC infrastructure.',
+      image: '/images/Anas.webp',
+      person: 'Anas Ali',
+      role: 'General Manager, CRIMSON Steel Contracting',
       year: '2025',
-      stats: ['Net-zero villas in prototype', 'Modular assembly pilot underway', 'Green material library expanding monthly']
+      stats: ['Express container builds delivered', 'Fabrication lead time -30%', 'Integrated QA dashboards across yards']
+    },
+    {
+      number: '06',
+      title: 'ONIX Engineering Abu Dhabi Expansion',
+      description:
+        'Diaa Zayoud, General Manager of ONIX Engineering Abu Dhabi, launched a dedicated delivery office to coordinate structural, infrastructure, and MEP programs across the capital, accelerating client approvals and site execution.',
+      image: '/images/Dia.webp',
+      person: 'Diaa Zayoud',
+      role: 'General Manager, ONIX Engineering Abu Dhabi',
+      year: '2025',
+      stats: ['Dedicated Abu Dhabi delivery hub', 'Permitting cycle time -18%', 'Cross-discipline teams deployed citywide']
+    },
+    {
+      number: '07',
+      title: 'ONIX Prime Digitization',
+      description:
+        'Obadam Saad Hamada, General Manager of ONIX Prime, modernized accounting and tax consultancy operations with cloud-native workflows, AI-assisted compliance checks, and data-rich client dashboards.',
+      image: '/images/Obada.webp',
+      person: 'Obadam Saad Hamada',
+      role: 'General Manager, ONIX Prime',
+      year: '2025',
+      stats: ['AI-led tax compliance reviews', 'Client dashboards launched', 'Month-end close time -28%']
     }
   ]
 
@@ -227,7 +249,7 @@ export default function Timeline() {
       {/* Roadmap Timeline */}
       <div className="relative z-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20" ref={timelineRef}>
         <div className="relative md:pt-6">
-          <div className="absolute left-[1.25rem] top-0 h-full w-px bg-gradient-to-b from-blue-500/40 via-blue-500/10 to-transparent md:left-1/2 md:-translate-x-1/2" />
+          <div className="absolute left-[1.25rem] top-0 h-full w-px bg-gradient-to-b from-blue-500/60 via-blue-500/20 to-transparent md:left-1/2 md:-translate-x-1/2" />
           <div className="space-y-12 md:space-y-20">
             {timelineEvents.map((event, index) => {
               const isEven = index % 2 === 0
@@ -238,23 +260,26 @@ export default function Timeline() {
                   key={event.title}
                   className="relative md:flex md:items-center md:justify-between"
                 >
-                  <span
-                    className="absolute left-[1.25rem] top-6 z-10 flex h-4 w-4 -translate-x-1/2 items-center justify-center rounded-full border-2 border-blue-400 bg-slate-950 shadow-lg shadow-blue-500/30 md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2"
-                  >
-                    <span className="h-2 w-2 rounded-full bg-blue-400" />
+                  <span className="absolute left-[1.25rem] top-6 z-10 flex h-4 w-4 -translate-x-1/2 items-center justify-center md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2">
+                    <span className="absolute h-6 w-6 rounded-full bg-blue-500/20 animate-ping" />
+                    <span className="relative flex h-4 w-4 items-center justify-center rounded-full border-2 border-blue-300 bg-slate-950 shadow-lg shadow-blue-500/30">
+                      <span className="h-2 w-2 rounded-full bg-blue-400" />
+                    </span>
                   </span>
 
                   <div
                     data-timeline-card
                     data-index={index}
                     className={[
-                      'relative mt-10 rounded-3xl border border-white/10 bg-white/5 p-6 shadow-lg backdrop-blur-md transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-500/20 md:mt-0 md:w-[48%]',
+                      'group relative mt-10 overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 shadow-lg backdrop-blur-md transition-all duration-500 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-blue-500/30 md:mt-0 md:w-[48%]',
                       isEven ? 'md:ml-auto md:text-right' : 'md:mr-auto md:text-left',
                       isVisible
                         ? 'translate-y-0 opacity-100'
                         : 'translate-y-6 opacity-85 md:opacity-70 md:translate-y-10'
                     ].join(' ')}
                   >
+                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-purple-500/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                    <div className="pointer-events-none absolute inset-0 border border-white/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                     <div className={`flex items-center gap-4 ${isEven ? 'md:flex-row-reverse' : ''}`}>
                       {event.image ? (
                         <div className="h-20 w-20 flex-shrink-0 overflow-hidden rounded-3xl border border-white/10 shadow-inner shadow-blue-500/20">

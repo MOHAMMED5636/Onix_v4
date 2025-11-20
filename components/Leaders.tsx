@@ -20,9 +20,9 @@ export default function Leaders() {
   const leaders = [
     {
       name: "Rameez Kaddour",
-      title: "Founder",
+      title: "Founder & CEO",
       description:
-        "Founder of ONIX, specialized in Architecture and Civil Engineering with 15+ years of hands-on experience delivering high-impact projects.",
+        "Founder and CEO of ONIX, specialized in Architecture and Civil Engineering with 15+ years of hands-on experience delivering high-impact projects and steering the group's strategic vision.",
       image: "/images/rameez-kaddour.webp",
       slug: "rameez-kaddour",
       achievements: [
@@ -30,25 +30,13 @@ export default function Leaders() {
         "Delivered multi-disciplinary projects from concept to completion",
         "Built a culture focused on quality, innovation, and client success",
       ],
-    },
-    {
-      name: "Ahmed Al Kaddour",
-      title: "Managing Director",
-      description:
-        "Civil Engineer with 25+ years of experience in Dubai. Ahmed leads ONIX Group with a delivery-first mindset, combining technical depth and proven leadership to drive growth across engineering and construction.",
-      image: "/images/ahmed_al_kaddour.webp",
-      slug: "ahmed-al-kaddour",
-      achievements: [
-        "25+ years delivering civil engineering projects in Dubai",
-        "Led multidisciplinary teams across major developments",
-        "Built long-term client relationships through quality and trust",
-      ],
+      accent: "#f9dfe7",
     },
     {
       name: "Kaddour Al Kaddour",
-      title: "Head of Design Department",
+      title: "General Manager, Onix Engineering",
       description:
-        "Architect with 10+ years of experience leading design across residential and commercial projects, driving concept-to-detail excellence at ONIX.",
+        "General Manager of Onix Engineering with 10+ years leading multidisciplinary teams, driving concept-to-detail excellence across residential and commercial projects.",
       image: "/images/kaddour.webp",
       slug: "kaddour-al-kaddour",
       achievements: [
@@ -56,58 +44,77 @@ export default function Leaders() {
         "Delivered award‑winning residential and commercial concepts",
         "Championed high standards in detailing and client experience",
       ],
+      accent: "#f4efe6",
     },
     {
       name: "Nabil Al Kaddour",
-      title: "Head of ONIX PLUS",
+      title: "General Manager, ONIX PLUS",
       description:
-        "Leads ONIX PLUS (Construction, Fit‑Out, and Landscaping). Focused on turning design and engineering strategies into reality with precision, quality, and on‑time delivery within budget.",
+        "General Manager of ONIX PLUS (Construction, Fit-Out, and Landscaping). Focused on turning design and engineering strategies into reality with precision, quality, and on-time delivery within budget.",
       image: "/images/nabil.webp",
       slug: "nabil-al-kaddour",
       achievements: [
-        "Delivered multi‑scope construction, fit‑out, and landscape projects",
+        "Delivered multi-scope construction, fit-out, and landscape projects",
         "Built execution frameworks for quality and cost control",
-        "Consistently achieved on‑time, on‑budget outcomes",
+        "Consistently achieved on-time, on-budget outcomes",
       ],
+      accent: "#fff2c9",
+    },
+    {
+      name: "Mamoun Al Hussien",
+      title: "General Manager, ONIX Design Studio",
+      description:
+        "Mamoun leads ONIX Design Studio, overseeing multidisciplinary interior and architectural teams to deliver signature spaces across the GCC.",
+      image: "/images/mamoun.webp",
+      slug: "mamoun-al-hussien",
+      achievements: [
+        "Scaled ONIX delivery teams across the GCC markets",
+        "Integrated multi-discipline ops teams across mega projects",
+        "Reduced procurement lead times by 25%",
+      ],
+      accent: "#e6f0ff",
     },
     {
       name: "Anas Ali",
-      title: "Director of Operations",
+      title: "General Manager, CRIMSON",
       description:
-        "Anas leads ONIX operations across the GCC, aligning site execution, supply-chain efficiency, and client handovers with corporate strategy.",
-      image: "/images/rameez-kaddour.webp",
+        "Anas leads CRIMSON, overseeing specialized steel fabrication and industrial container operations with a focus on delivery speed and quality.",
+      image: "/images/Anas.webp",
       slug: "anas-ali",
       achievements: [
-        "Scaled ONIX delivery network to 6 active markets",
-        "Implemented integrated site monitoring dashboards",
-        "Reduced procurement lead time by 28%",
+        "Negotiated strategic alliances with regional developers",
+        "Built risk-managed cost control frameworks",
+        "Secured flagship mixed-use developments across MENA",
       ],
+      accent: "#ffe3d5",
     },
     {
-      name: "Obada Hamada",
-      title: "Head of Smart Engineering",
+      name: "Obadam Saad Hamada",
+      title: "General Manager, ONIX Prime",
       description:
-        "Obada champions ONIX digital initiatives—integrating BIM, AI-assisted coordination, and smart facility infrastructure into every program.",
-      image: "/images/ahmed_al_kaddour.webp",
+        "Obadam leads ONIX Prime, overseeing accounting and tax consultancy operations with a focus on digital transformation, data accuracy, and high-touch client service.",
+      image: "/images/Obada.webp",
       slug: "obada-hamada",
       achievements: [
-        "Rolled out BIM-first delivery across all engineering teams",
+        "Rolled out BIM-first delivery across ONIX engineering teams",
         "Introduced AI-driven QA/QC workflows for critical assets",
-        "Leads smart building retrofits for key clients",
+        "Built smart building studio for key clients",
       ],
+      accent: "#f3e8ff",
     },
     {
-      name: "Dia Zayoud",
-      title: "Commercial Director",
+      name: "Diaa Zayoud",
+      title: "General Manager, ONIX Engineering Abu Dhabi",
       description:
-        "Dia drives ONIX commercial strategy—overseeing bids, partnerships, and financial governance to keep mega projects on track.",
-      image: "/images/nabil.webp",
+        "Diaa leads ONIX Engineering Abu Dhabi, coordinating structural, infrastructure, and MEP delivery with a hands-on approach to client success.",
+      image: "/images/Dia.webp",
       slug: "dia-zayoud",
       achievements: [
         "Negotiated strategic alliances with regional developers",
         "Built risk-managed cost control frameworks",
         "Secured flagship mixed-use developments across MENA",
       ],
+      accent: "#e0f6ff",
     },
   ];
 
@@ -146,19 +153,9 @@ export default function Leaders() {
   }
 
   return (
-    <div className="min-h-screen relative">
-      {/* Video Background */}
-      <div className="absolute inset-0 w-full h-full overflow-hidden">
-        <iframe
-          src="https://player.vimeo.com/video/1135633257?autoplay=1&loop=1&muted=1&controls=0&title=0&byline=0&portrait=0"
-          title="ONIX Leaders Background"
-          className="pointer-events-none absolute top-1/2 left-1/2 min-h-[120vh] min-w-[120vw] -translate-x-1/2 -translate-y-1/2"
-          allow="autoplay; fullscreen; picture-in-picture"
-          allowFullScreen
-          frameBorder="0"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-gray-900/80 via-gray-900/60 to-gray-900/95"></div>
-      </div>
+    <div className="min-h-screen relative bg-gradient-to-b from-gray-900 via-gray-950 to-black">
+      {/* Ambient gradient overlay */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.15),_transparent_45%)] opacity-60 pointer-events-none"></div>
       {/* Back Button */}
       <div className="fixed top-8 left-8 z-50 relative">
         <Link
@@ -207,53 +204,45 @@ export default function Leaders() {
 
       {/* Leaders Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 relative z-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
           {leaders.map((leader, index) => (
-            <div key={index} className="group">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl">
-                {/* Leader Photo */}
-                <div className="mb-4">
-                  <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-white/30 shadow-xl">
-                    <Image
-                      src={leader.image}
-                      alt={leader.name}
-                      width={128}
-                      height={128}
-                      className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
-                      style={{
-                        objectPosition:
-                          leader.slug === "dia-zayoud" ? "50% 35%" : "50% 20%",
-                      }}
-                    />
-                  </div>
+            <div key={leader.slug} className={`group ${index === leaders.length - 1 ? "lg:col-start-2" : ""}`}>
+              <div
+                className="relative flex flex-col items-center text-center rounded-[56px] px-8 py-10 shadow-2xl border border-white/20 transition-transform duration-500 hover:-translate-y-2"
+                style={{ backgroundColor: leader.accent }}
+              >
+                <div className="absolute inset-x-8 top-8 flex justify-center text-[10px] uppercase tracking-[0.4em] text-slate-500/80 pointer-events-none">
+                  <span>Leadership</span>
                 </div>
-
-                {/* Leader Info */}
-                <div className="text-center">
-                  <h3 className="text-xl font-bold text-white mb-1">
-                    {leader.name}
-                  </h3>
-                  <p className="text-sm text-blue-300 mb-3 font-medium">
-                    {leader.title}
-                  </p>
-                  <p className="text-gray-300 leading-relaxed mb-4 text-sm">
-                    {leader.description}
-                  </p>
-
-                  {/* Achievements */}
-                  <div className="mb-4">
-                    <h4 className="text-sm font-semibold text-white mb-2">
-                      Key Achievements:
-                    </h4>
-                    <ul className="text-xs text-gray-300 space-y-1">
-                      {leader.achievements.map((achievement, idx) => (
-                        <li key={idx} className="flex items-start">
-                          <span className="text-blue-400 mr-2">•</span>
-                          <span>{achievement}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                <div className="mt-10 w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                  <Image
+                    src={leader.image}
+                    alt={leader.name}
+                    width={128}
+                    height={128}
+                    className="w-full h-full object-cover"
+                    style={{
+                      objectPosition:
+                        leader.slug === "dia-zayoud" ? "50% 35%" : "50% 20%",
+                    }}
+                  />
+                </div>
+                <h3 className="mt-8 text-2xl font-semibold text-slate-900">{leader.name}</h3>
+                <p className="text-sm uppercase tracking-wide text-slate-600 mb-4">
+                  {leader.title}
+                </p>
+                <p className="text-base text-slate-700 leading-relaxed">
+                  {leader.description}
+                </p>
+                <div className="mt-6 flex flex-wrap justify-center gap-2">
+                  {leader.achievements.map((achievement) => (
+                    <span
+                      key={achievement}
+                      className="text-xs font-semibold tracking-wide px-4 py-2 rounded-full bg-white/85 text-slate-800 backdrop-blur"
+                    >
+                      {achievement}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>
