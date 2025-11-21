@@ -87,7 +87,7 @@ export default function Timeline() {
       number: '07',
       title: 'ONIX Prime Digitization',
       description:
-        'Obada Saad Hamada, General Manager of ONIX Prime, modernized accounting and tax consultancy operations with cloud-native workflows, AI-assisted compliance checks, and data-rich client dashboards.',
+        'Obada Saad Hamada, General Manager of ONIX Prime, continues the division’s founding vision—deliver reliable, transparent financial and tax consultancy that helps businesses grow with confidence. Under his leadership, cloud-native workflows, audit-ready reporting, and relationship-first advisory programs create lasting value for every client.',
       image: '/images/Obada.webp',
       person: 'Obada Saad Hamada',
       role: 'General Manager, ONIX Prime',

@@ -97,14 +97,14 @@ export default function Leaders() {
       name: "Obada Saad Hamada",
       title: "General Manager, ONIX Prime",
       description:
-        "Obada leads ONIX Prime, overseeing accounting and tax consultancy operations with a focus on digital transformation, data accuracy, and high-touch client service.",
+        "Obada leads ONIX Prime with a clear mandate: deliver trusted financial and tax solutions that help businesses grow with confidence. Guided by accuracy, transparency, and professionalism, he forges long-term partnerships and keeps the advisory arm innovating for every client.",
       image: "/images/Obada.webp",
       slug: "obada-hamada",
       imagePosition: "50% 20%",
       achievements: [
-        "Rolled out BIM-first delivery across ONIX engineering teams",
-        "Introduced AI-driven QA/QC workflows for critical assets",
-        "Built smart building studio for key clients",
+        "Established ONIX Prime as a trusted financial and tax partner across industries",
+        "Introduced transparent reporting frameworks and compliance controls",
+        "Launched advisory programs that unlock sustainable growth for clients",
       ],
       accent: "#f3e8ff",
     },
