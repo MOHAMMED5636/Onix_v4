@@ -89,10 +89,10 @@ export default function Leaders() {
       accent: "#ffe3d5",
     },
     {
-      name: "Obadam Saad Hamada",
+      name: "Obada Saad Hamada",
       title: "General Manager, ONIX Prime",
       description:
-        "Obadam leads ONIX Prime, overseeing accounting and tax consultancy operations with a focus on digital transformation, data accuracy, and high-touch client service.",
+        "Obada leads ONIX Prime, overseeing accounting and tax consultancy operations with a focus on digital transformation, data accuracy, and high-touch client service.",
       image: "/images/Obada.webp",
       slug: "obada-hamada",
       achievements: [
