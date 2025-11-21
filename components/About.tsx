@@ -55,7 +55,7 @@ export default function About() {
 
   const leadershipTeam = [
     {
-      name: 'Rameez Kaddour',
+      name: 'Ramez Kaddour',
       title: 'Founder & CEO',
       description:
         'Founder and CEO of ONIX, specialized in Architecture and Civil Engineering with 15+ years of hands-on experience delivering high-impact projects and steering the group\'s strategic vision.',
@@ -101,7 +101,7 @@ export default function About() {
       title: 'General Manager, ONIX Design Studio',
       description:
         'Mamoun leads ONIX Design Studio, overseeing multidisciplinary interior and architectural teams to deliver signature spaces across the GCC.',
-      image: '/images/mamoun.webp',
+      image: 'https://res.cloudinary.com/dhq6qrrph/image/upload/v1763710496/mamoun_ut7ywy.jpg',
       imagePosition: '50% 25%',
       accent: '#e6f0ff',
       achievements: [

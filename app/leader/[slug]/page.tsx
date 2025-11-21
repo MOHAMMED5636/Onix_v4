@@ -30,16 +30,16 @@ export default function LeaderPage() {
     // Leader data based on slug
     const leadersData = {
       'rameez-kaddour': {
-        name: 'Rameez Kaddour',
+        name: 'Ramez Kaddour',
         title: 'Chief Executive Officer',
-        description: 'A visionary leader with over 25 years of experience in engineering and construction, Rameez has been instrumental in shaping Onix Group into a powerhouse of innovation and excellence.',
+        description: 'A visionary leader with over 25 years of experience in engineering and construction, Ramez has been instrumental in shaping Onix Group into a powerhouse of innovation and excellence.',
         image: '/images/rameez-kaddour.webp',
         achievements: [
           'Led company growth from startup to industry leader',
           'Pioneered sustainable construction practices',
           'Established international partnerships'
         ],
-        bio: 'Rameez Kaddour brings over 25 years of exceptional leadership experience to Onix Group. His visionary approach and deep understanding of the engineering and construction industry have been instrumental in transforming the company from a startup into a recognized industry leader.',
+        bio: 'Ramez Kaddour brings over 25 years of exceptional leadership experience to Onix Group. His visionary approach and deep understanding of the engineering and construction industry have been instrumental in transforming the company from a startup into a recognized industry leader.',
         experience: [
           '25+ years in engineering and construction',
           'Led 500+ successful projects',

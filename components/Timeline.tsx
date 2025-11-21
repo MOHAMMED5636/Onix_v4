@@ -21,9 +21,9 @@ export default function Timeline() {
       number: '01',
       title: 'Digital Transformation and Innovation Leadership',
       description:
-        'In 2021, Onix Group embraced digital transformation across every company. Founder & CEO Rameez Kaddour set the mandate for automation, data fluency, and client portals that keep decisions moving in real time.',
+        'In 2021, Onix Group embraced digital transformation across every company. Founder & CEO Ramez Kaddour set the mandate for automation, data fluency, and client portals that keep decisions moving in real time.',
       image: '/images/rameez-kaddour.webp',
-      person: 'Rameez Kaddour',
+      person: 'Ramez Kaddour',
       role: 'Founder & CEO',
       year: '2021',
       stats: ['40+ digital initiatives launched', 'Client portal adoption 95%', 'Execution velocity +32%']
@@ -55,7 +55,7 @@ export default function Timeline() {
       title: 'Design Innovation – ONIX Design Studio',
       description:
         'Under General Manager Mamoun Al Hussien, ONIX Design Studio rolled out integrated concept labs across the GCC, combining interior, architectural, and experiential design into one interdisciplinary workflow.',
-      image: '/images/mamoun.webp',
+      image: 'https://res.cloudinary.com/dhq6qrrph/image/upload/v1763710496/mamoun_ut7ywy.jpg',
       person: 'Mamoun Al Hussien',
       role: 'General Manager, ONIX Design Studio',
       year: '2024',

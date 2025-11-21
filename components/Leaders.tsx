@@ -19,12 +19,13 @@ export default function Leaders() {
 
   const leaders = [
     {
-      name: "Rameez Kaddour",
+      name: "Ramez Kaddour",
       title: "Founder & CEO",
       description:
         "Founder and CEO of ONIX, specialized in Architecture and Civil Engineering with 15+ years of hands-on experience delivering high-impact projects and steering the group's strategic vision.",
       image: "/images/rameez-kaddour.webp",
       slug: "rameez-kaddour",
+      imagePosition: "50% 15%",
       achievements: [
         "15+ years across architecture and civil engineering",
         "Delivered multi-disciplinary projects from concept to completion",
@@ -39,6 +40,7 @@ export default function Leaders() {
         "General Manager of Onix Engineering with 10+ years leading multidisciplinary teams, driving concept-to-detail excellence across residential and commercial projects.",
       image: "/images/kaddour.webp",
       slug: "kaddour-al-kaddour",
+      imagePosition: "50% 20%",
       achievements: [
         "10+ years in architectural design leadership",
         "Delivered award‑winning residential and commercial concepts",
@@ -53,6 +55,7 @@ export default function Leaders() {
         "General Manager of ONIX PLUS (Construction, Fit-Out, and Landscaping). Focused on turning design and engineering strategies into reality with precision, quality, and on-time delivery within budget.",
       image: "/images/nabil.webp",
       slug: "nabil-al-kaddour",
+      imagePosition: "50% 25%",
       achievements: [
         "Delivered multi-scope construction, fit-out, and landscape projects",
         "Built execution frameworks for quality and cost control",
@@ -65,8 +68,9 @@ export default function Leaders() {
       title: "General Manager, ONIX Design Studio",
       description:
         "Mamoun leads ONIX Design Studio, overseeing multidisciplinary interior and architectural teams to deliver signature spaces across the GCC.",
-      image: "/images/mamoun.webp",
+      image: "https://res.cloudinary.com/dhq6qrrph/image/upload/v1763710496/mamoun_ut7ywy.jpg",
       slug: "mamoun-al-hussien",
+      imagePosition: "50% 25%",
       achievements: [
         "Scaled ONIX delivery teams across the GCC markets",
         "Integrated multi-discipline ops teams across mega projects",
@@ -81,6 +85,7 @@ export default function Leaders() {
         "Anas leads CRIMSON, overseeing specialized steel fabrication and industrial container operations with a focus on delivery speed and quality.",
       image: "/images/Anas.webp",
       slug: "anas-ali",
+      imagePosition: "50% 20%",
       achievements: [
         "Negotiated strategic alliances with regional developers",
         "Built risk-managed cost control frameworks",
@@ -95,6 +100,7 @@ export default function Leaders() {
         "Obada leads ONIX Prime, overseeing accounting and tax consultancy operations with a focus on digital transformation, data accuracy, and high-touch client service.",
       image: "/images/Obada.webp",
       slug: "obada-hamada",
+      imagePosition: "50% 20%",
       achievements: [
         "Rolled out BIM-first delivery across ONIX engineering teams",
         "Introduced AI-driven QA/QC workflows for critical assets",
@@ -109,6 +115,7 @@ export default function Leaders() {
         "Diaa leads ONIX Engineering Abu Dhabi, coordinating structural, infrastructure, and MEP delivery with a hands-on approach to client success.",
       image: "/images/Dia.webp",
       slug: "dia-zayoud",
+      imagePosition: "50% 25%",
       achievements: [
         "Negotiated strategic alliances with regional developers",
         "Built risk-managed cost control frameworks",
@@ -223,7 +230,8 @@ export default function Leaders() {
                     className="w-full h-[260px] object-cover"
                     style={{
                       objectPosition:
-                        leader.slug === "dia-zayoud" ? "50% 35%" : "50% 15%",
+                        leader.imagePosition ||
+                        (leader.slug === "dia-zayoud" ? "50% 35%" : "50% 15%"),
                     }}
                   />
                 </div>
