@@ -204,44 +204,44 @@ export default function Leaders() {
 
       {/* Leaders Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 relative z-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {leaders.map((leader, index) => (
-            <div key={leader.slug} className={`group ${index === leaders.length - 1 ? "lg:col-start-2" : ""}`}>
-              <div
-                className="relative flex flex-col items-center text-center rounded-[56px] px-8 py-10 shadow-2xl border border-white/20 transition-transform duration-500 hover:-translate-y-2"
-                style={{ backgroundColor: leader.accent }}
-              >
-                <div className="absolute inset-x-8 top-8 flex justify-center text-[10px] uppercase tracking-[0.4em] text-slate-500/80 pointer-events-none">
-                  <span>Leadership</span>
+            <div
+              key={leader.slug}
+              className={`flex justify-center ${index === leaders.length - 1 ? "lg:col-start-2" : ""}`}
+            >
+              <div className="relative w-full max-w-sm rounded-[48px] bg-[#5b5861] text-white/90 border border-white/15 shadow-[0_30px_60px_rgba(0,0,0,0.45)] px-8 pb-12 pt-12 transition-transform duration-500 hover:-translate-y-2 hover:shadow-[0_40px_70px_rgba(0,0,0,0.55)]">
+                <div className="text-[10px] uppercase tracking-[0.5em] text-white/60 text-center mb-6">
+                  Leadership
                 </div>
-                <div className="mt-10 w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                <div className="w-full rounded-[28px] overflow-hidden border border-white/20 shadow-lg mb-8">
                   <Image
                     src={leader.image}
                     alt={leader.name}
-                    width={128}
-                    height={128}
-                    className="w-full h-full object-cover"
+                    width={400}
+                    height={420}
+                    className="w-full h-[260px] object-cover"
                     style={{
                       objectPosition:
-                        leader.slug === "dia-zayoud" ? "50% 35%" : "50% 20%",
+                        leader.slug === "dia-zayoud" ? "50% 35%" : "50% 15%",
                     }}
                   />
                 </div>
-                <h3 className="mt-8 text-2xl font-semibold text-slate-900">{leader.name}</h3>
-                <p className="text-sm uppercase tracking-wide text-slate-600 mb-4">
+                <h3 className="text-2xl font-semibold text-white text-center">{leader.name}</h3>
+                <p className="text-xs font-medium tracking-[0.3em] text-white/70 text-center mb-4">
                   {leader.title}
                 </p>
-                <p className="text-base text-slate-700 leading-relaxed">
+                <p className="text-base text-white/85 leading-relaxed text-center">
                   {leader.description}
                 </p>
-                <div className="mt-6 flex flex-wrap justify-center gap-2">
+                <div className="mt-6 flex flex-col gap-2">
                   {leader.achievements.map((achievement) => (
-                    <span
+                    <div
                       key={achievement}
-                      className="text-xs font-semibold tracking-wide px-4 py-2 rounded-full bg-white/85 text-slate-800 backdrop-blur"
+                      className="w-full rounded-full bg-white/12 border border-white/15 px-4 py-2 text-xs font-semibold tracking-wide text-white/85 text-center"
                     >
                       {achievement}
-                    </span>
+                    </div>
                   ))}
                 </div>
               </div>

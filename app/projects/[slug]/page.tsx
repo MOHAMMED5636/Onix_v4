@@ -49,6 +49,69 @@ export default function ProjectPage() {
         timeline: '36 months',
         status: 'Completed'
       },
+      'luxury-villa-residence': {
+        title: 'Luxury Villa Residence',
+        category: 'Residential',
+        year: '2024',
+        description: 'Sculpted concrete, timber fins, and full-height glass wrap this tranquil private villa.',
+        fullDescription: 'Minimal, calm, and bathed in natural light, this residence in Saih Shuaib pairs textured concrete shells with warm interior palettes. The plan prioritizes long sightlines through the living core while framing palm courtyards on every side.',
+        image: 'https://res.cloudinary.com/dhq6qrrph/image/upload/v1763634069/qahvqhe2sar5hbfm5laa_njhlyp.webp',
+        location: 'Saih Shuaib, UAE',
+        client: 'Private Client',
+        size: '14,500 sq ft GFA',
+        features: [
+          'Double-height majlis',
+          'Custom joinery package',
+          'Smart home lighting scenes',
+          'Indoor-outdoor dining terrace'
+        ],
+        services: [
+          'Architecture',
+          'Interiors',
+          'MEP',
+          'Project Management'
+        ],
+        timeline: '18 months',
+        status: 'Completed',
+        gallery: [
+          'https://res.cloudinary.com/dhq6qrrph/image/upload/v1763634074/qsikhhigbhyc4gg7lco3_ckbkne.webp',
+          'https://res.cloudinary.com/dhq6qrrph/image/upload/v1763634064/iylxclkwo1ytkyfqrlr2_a6snt7.webp',
+          'https://res.cloudinary.com/dhq6qrrph/image/upload/v1763634054/e4nvyjavifljzogitdlu_vi3tw8.webp',
+          'https://res.cloudinary.com/dhq6qrrph/image/upload/v1763634084/t2m3ln8mei4nsfvccq1e_suqmpg.webp',
+          'https://res.cloudinary.com/dhq6qrrph/image/upload/v1763634069/qahvqhe2sar5hbfm5laa_njhlyp.webp'
+        ]
+      },
+      'loay-nasser-villa': {
+        title: 'Loay Nasser Signature Villa',
+        category: 'Residential',
+        year: '2025',
+        description: 'A three-tier villa with deep terraces, palm courts, and warm timber accents.',
+        fullDescription: 'Designed for Mr. Loay Nasser, this villa stacks bold horizontal plates above a fluid ground plane. Timber baffled balconies, palm courtyards, and layered glazing keep interiors bright while ensuring privacy.',
+        image: 'https://res.cloudinary.com/dhq6qrrph/image/upload/v1763634982/Villa_.MR.LOAY_NASSER___QAIS_MOHAMMAD_3__Page19_yfmxhp.png',
+        location: 'Dubai, UAE',
+        client: 'Loay Nasser',
+        size: '12,800 sq ft',
+        features: [
+          'Layered roof terraces',
+          'Timber vertical fins',
+          'Palm-lined forecourt',
+          'Floating stair atrium'
+        ],
+        services: [
+          'Architectural Design',
+          'Interior Design',
+          'Landscape Coordination',
+          'Project Management'
+        ],
+        timeline: '20 months',
+        status: 'In Progress',
+        gallery: [
+          'https://res.cloudinary.com/dhq6qrrph/image/upload/v1763634982/Villa_.MR.LOAY_NASSER___QAIS_MOHAMMAD_3__Page18_yfcyrv.png',
+          'https://res.cloudinary.com/dhq6qrrph/image/upload/v1763634981/Villa_.MR.LOAY_NASSER___QAIS_MOHAMMAD_3__Page16_qx6sst.png',
+          'https://res.cloudinary.com/dhq6qrrph/image/upload/v1763634981/Villa_.MR.LOAY_NASSER___QAIS_MOHAMMAD_3__Page15_rbjazq.png',
+          'https://res.cloudinary.com/dhq6qrrph/image/upload/v1763634982/Villa_.MR.LOAY_NASSER___QAIS_MOHAMMAD_3__Page19_yfmxhp.png'
+        ]
+      },
       'highway-bridge-project': {
         title: 'Highway Bridge Project',
         category: 'Infrastructure',
@@ -109,7 +172,7 @@ export default function ProjectPage() {
         year: '2022',
         description: 'Precision-engineered manufacturing excellence, where advanced systems drive productivity and operational efficiency.',
         fullDescription: 'In the heart of industrial innovation, this manufacturing facility stands as a beacon of precision engineering and operational excellence. Every system has been meticulously designed to maximize efficiency while prioritizing worker safety and environmental responsibility. The seamless integration of advanced MEP systems creates a production environment where technology and human expertise converge, resulting in unparalleled quality output and sustainable operations that set new benchmarks for the industry.',
-        image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: 'https://res.cloudinary.com/dhq6qrrph/image/upload/v1763634074/qsikhhigbhyc4gg7lco3_ckbkne.webp',
         location: 'Sharjah, UAE',
         client: 'Industrial Group',
         size: '500,000 sq ft',
@@ -128,7 +191,45 @@ export default function ProjectPage() {
           'Project Management'
         ],
         timeline: '30 months',
-        status: 'Completed'
+        status: 'Completed',
+        gallery: [
+          'https://res.cloudinary.com/dhq6qrrph/image/upload/v1763705301/2529-_4__new_blsb60.jpg',
+          'https://res.cloudinary.com/dhq6qrrph/image/upload/v1763705279/2529-_2__new_uil6qk.jpg',
+          'https://res.cloudinary.com/dhq6qrrph/image/upload/v1763705303/2529-_5__new_aaz5ny.jpg',
+          'https://res.cloudinary.com/dhq6qrrph/image/upload/v1763705306/2529-_6__new_vxwnry.jpg',
+          'https://res.cloudinary.com/dhq6qrrph/image/upload/v1763705318/2529-_7__new_jmtf6y.jpg'
+        ]
+      },
+      'signature-courtyard-villa': {
+        title: 'Signature Courtyard Villa',
+        category: 'Residential',
+        year: '2025',
+        description: 'Courtyards, cascading terraces, and sunken lounges deliver a sculpted private resort.',
+        fullDescription: 'This villa is organized around a palm-lined courtyard, with sunken lounges and layered terraces capturing shade throughout the day. Timber fins and textured concrete shells create a calm resort-like presence.',
+        image: 'https://res.cloudinary.com/dhq6qrrph/image/upload/v1763638862/2538_1_ancirv.jpg',
+        location: 'Dubai, UAE',
+        client: 'Private Client',
+        size: '11,200 sq ft',
+        features: [
+          'Central courtyard with reflective pool',
+          'Layered terraces and balconies',
+          'Sunken lounge connected to landscape',
+          'Timber fin shading system'
+        ],
+        services: [
+          'Architectural Design',
+          'Interior Design',
+          'Landscape Coordination',
+          'Project Management'
+        ],
+        timeline: '16 months',
+        status: 'In Progress',
+        gallery: [
+          'https://res.cloudinary.com/dhq6qrrph/image/upload/v1763638862/2538_1_ancirv.jpg',
+          'https://res.cloudinary.com/dhq6qrrph/image/upload/v1763639525/2538_2_yx9vfs.jpg',
+          'https://res.cloudinary.com/dhq6qrrph/image/upload/v1763639535/2538_3_mdsnzi.jpg',
+          'https://res.cloudinary.com/dhq6qrrph/image/upload/v1763639558/2538_5_ua1h2z.jpg'
+        ]
       }
     }
 
@@ -244,6 +345,25 @@ export default function ProjectPage() {
                 ))}
               </div>
             </div>
+
+            {project.gallery && project.gallery.length > 0 && (
+              <div>
+                <h2 className="text-3xl font-bold text-white mb-4">Interior Gallery</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {project.gallery.map((imageUrl: string, index: number) => (
+                    <div key={index} className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-white/10">
+                      <Image
+                        src={imageUrl}
+                        alt={`${project.title} interior ${index + 1}`}
+                        fill
+                        className="object-cover transition-transform duration-500 hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Sidebar */}

@@ -7,35 +7,35 @@ import { useEffect, useRef } from 'react'
 export default function Projects() {
   const projects = [
     {
-      slug: 'modern-office-complex',
-      title: 'Modern Office Complex',
-      category: 'Commercial',
-      description: 'A soaring architectural masterpiece where innovation meets sustainability, redefining the future of corporate workspaces.',
-      image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      year: '2023'
-    },
-    {
-      slug: 'highway-bridge-project',
-      title: 'Highway Bridge Project',
-      category: 'Infrastructure',
-      description: 'An engineering marvel that bridges communities, transforming regional connectivity with cutting-edge structural design.',
-      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      year: '2022'
-    },
-    {
-      slug: 'residential-tower',
-      title: 'Residential Tower',
+      slug: 'luxury-villa-residence',
+      title: 'Luxury Villa Residence',
       category: 'Residential',
-      description: 'Elevated living reimagined—where luxury meets intelligent design, creating an unparalleled residential experience.',
-      image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      year: '2023'
+      description: 'A bespoke villa that blends sculpted concrete, warm timber, and glass to craft a serene private sanctuary with resort-level detailing.',
+      image: 'https://res.cloudinary.com/dhq6qrrph/image/upload/v1763634074/qsikhhigbhyc4gg7lco3_ckbkne.webp',
+      year: '2024'
+    },
+    {
+      slug: 'loay-nasser-villa',
+      title: 'Loay Nasser Signature Villa',
+      category: 'Residential',
+      description: 'Layered terraces, timber screens, and palm-lined courtyards give this villa a sculpted resort feel.',
+      image: 'https://res.cloudinary.com/dhq6qrrph/image/upload/v1763634982/Villa_.MR.LOAY_NASSER___QAIS_MOHAMMAD_3__Page19_yfmxhp.png',
+      year: '2025'
+    },
+    {
+      slug: 'signature-courtyard-villa',
+      title: 'Signature Courtyard Villa',
+      category: 'Residential',
+      description: 'Sunken lounges, cascading terraces, and a central courtyard define this sculpted family retreat.',
+      image: 'https://res.cloudinary.com/dhq6qrrph/image/upload/v1763638862/2538_1_ancirv.jpg',
+      year: '2025'
     },
     {
       slug: 'industrial-plant',
       title: 'Industrial Plant',
       category: 'Industrial',
       description: 'Precision-engineered manufacturing excellence, where advanced systems drive productivity and operational efficiency.',
-      image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://res.cloudinary.com/dhq6qrrph/image/upload/v1763634074/qsikhhigbhyc4gg7lco3_ckbkne.webp',
       year: '2022'
     }
   ]

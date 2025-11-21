@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Timeline() {
   const [isLoading, setIsLoading] = useState(true)
@@ -143,12 +144,14 @@ export default function Timeline() {
           x5-video-player-fullscreen="true"
           x5-video-orientation="portraint"
         >
-          <source src="/videos/ONIX GROUP LOADING.mp4" type="video/mp4" />
+          <source src="/videos/ONIX_GROUP_LOADING.mp4" type="video/mp4" />
           {/* Fallback for browsers that don't support video */}
           <div className="flex items-center justify-center h-full">
-            <img 
+            <Image
               src="/images/ONIX_GROUP_0002.png"
               alt="ONIX GROUP Loading"
+              width={240}
+              height={240}
               className="object-contain animate-pulse w-[120px] sm:w-[160px] md:w-[200px] lg:w-[240px] h-auto"
             />
           </div>

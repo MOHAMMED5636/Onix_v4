@@ -16,17 +16,17 @@ export default function Companies() {
       logo: '/images/ONIX Engineering Consultancy White.webp'
     },
     {
-      name: 'ONIX PRIME',
-      description: 'Professional accounting and tax consultancy services providing comprehensive financial solutions.',
+      name: 'ONIX PLUS',
+      description: 'CONSTRUCTION | FIT-OUT | LANDSCAPING — Onix Plus turns design and engineering into reality. We bring concepts to life through construction, fit-out, and landscaping with uncompromising quality and attention to detail.',
       services: [
-        'Tax Consultancy',
-        'Financial Planning', 
-        'Accounting Services',
-        'Audit Services',
-        'Business Advisory',
-        'Compliance Management'
+        'Construction',
+        'Interior Fit-Out',
+        'Landscaping',
+        'Quality Assurance',
+        'Project Delivery',
+        'Site Coordination'
       ],
-      logo: '/images/Onix Prime Logo White[1].webp'
+      logo: '/images/onix-plus-logo.png'
     },
     {
       name: 'ONIX DESIGN STUDIO',
@@ -42,19 +42,6 @@ export default function Companies() {
       logo: '/images/onix-design-studio-logo.png'
     },
     {
-      name: 'ONIX PLUS',
-      description: 'CONSTRUCTION | FIT-OUT | LANDSCAPING — Onix Plus turns design and engineering into reality. We bring concepts to life through construction, fit-out, and landscaping with uncompromising quality and attention to detail.',
-      services: [
-        'Construction',
-        'Interior Fit-Out',
-        'Landscaping',
-        'Quality Assurance',
-        'Project Delivery',
-        'Site Coordination'
-      ],
-      logo: '/images/onix-plus-logo.png'
-    },
-    {
       name: 'CRIMSON',
       description: 'Specialized steel containing and metal fabrication services for industrial and construction projects.',
       services: [
@@ -66,6 +53,19 @@ export default function Companies() {
         'Project Delivery'
       ],
       logo: '/images/CRIMSON 001[1].webp'
+    },
+    {
+      name: 'ONIX PRIME',
+      description: 'Professional accounting and tax consultancy services providing comprehensive financial solutions.',
+      services: [
+        'Tax Consultancy',
+        'Financial Planning', 
+        'Accounting Services',
+        'Audit Services',
+        'Business Advisory',
+        'Compliance Management'
+      ],
+      logo: '/images/Onix Prime Logo White[1].webp'
     }
   ]
 
