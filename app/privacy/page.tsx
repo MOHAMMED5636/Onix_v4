@@ -21,7 +21,7 @@ export default function PrivacyPolicy() {
           </p>
 
           <p className="text-gray-300 mb-8">
-            Use of https://onixengineering.com/ website services (hereafter — Site) implies the User's unconditional consent to this Policy and the terms of processing of his/her personal information specified in it; in case of disagreement with these terms, the User shall refrain from using the services.
+            Use of https://onixgroup.ae/ website services (hereafter — Site) implies the User's unconditional consent to this Policy and the terms of processing of his/her personal information specified in it; in case of disagreement with these terms, the User shall refrain from using the services.
           </p>
 
           <h2 className="text-2xl font-bold text-white mb-4">1. General provisions.</h2>
@@ -43,7 +43,7 @@ export default function PrivacyPolicy() {
           </p>
 
           <p className="text-gray-300 mb-6 ml-4">
-            1.2.3. Current Privacy Policy only applies to the Site https://onixengineering.com/. The Site https://onixengineering.com/ does not control and is not responsible for third party websites, which the User can access via links available on the Site. Users following links to other websites are advised to familiarize themselves with the policies on the processing of personal data posted on such websites.
+            1.2.3. Current Privacy Policy only applies to the Site https://onixgroup.ae/. The Site https://onixgroup.ae/ does not control and is not responsible for third party websites, which the User can access via links available on the Site. Users following links to other websites are advised to familiarize themselves with the policies on the processing of personal data posted on such websites.
           </p>
 
           <h2 className="text-2xl font-bold text-white mb-4">2. Purposes of processing users' personal information.</h2>
@@ -200,7 +200,7 @@ export default function PrivacyPolicy() {
           </p>
 
           <p className="text-gray-300 mb-4">
-            7.2. The current version of the Privacy Policy is published on the webpage at the following address: https://onixengineering.com/privacy
+            7.2. The current version of the Privacy Policy is published on the webpage at the following address: https://onixgroup.ae/privacy
           </p>
 
           <p className="text-gray-300 mb-4">

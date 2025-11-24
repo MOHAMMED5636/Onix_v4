@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 
-export const SITE_URL = 'https://onixengineering.com'
+export const SITE_URL = 'https://onixgroup.ae'
 export const OG_IMAGE_URL = `${SITE_URL}/og-image.webp`
 
 type MetadataInput = {

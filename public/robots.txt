@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://onixengineering.com/sitemap.xml
+Sitemap: https://onixgroup.ae/sitemap.xml
 
 

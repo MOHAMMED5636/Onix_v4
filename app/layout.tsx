@@ -16,14 +16,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://onixengineering.com'),
+  metadataBase: new URL(SITE_URL),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: 'Onix Engineering Consultancy - Professional Engineering Solutions',
     description: 'Leading engineering consultancy providing innovative solutions for construction, infrastructure, and technical projects.',
-    url: 'https://onixengineering.com',
+    url: SITE_URL,
     siteName: 'Onix Engineering Consultancy',
     images: [
       {
