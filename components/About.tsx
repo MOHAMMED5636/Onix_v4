@@ -238,6 +238,21 @@ export default function About() {
                 <div className="text-white/90 font-semibold uppercase tracking-wide text-base sm:text-lg drop-shadow-lg">Client Satisfaction</div>
               </div>
             </div>
+
+            {/* Company Profile PDF CTA */}
+            <div className="mt-10 sm:mt-12 flex justify-center">
+              <a
+                href="/company-profile.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 rounded-full bg-white/90 px-6 sm:px-8 py-3 sm:py-3.5 text-sm sm:text-base font-semibold uppercase tracking-wide text-gray-900 shadow-xl hover:bg-white hover:shadow-2xl transition-all duration-300"
+              >
+                <span>Download Company Profile</span>
+                <span className="text-xs font-bold px-2 py-1 rounded-full bg-gray-900 text-white">
+                  PDF
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </section>

@@ -10,7 +10,8 @@ const primaryLinks = [
   { label: 'Services', href: '/services' },
   { label: 'Career', href: '/careers' },
   { label: 'News', href: '/news' },
-  { label: 'Projects', href: '/projects' }
+  { label: 'Projects', href: '/projects' },
+  { label: 'Mobile Card', href: '/mobile-card' }
 ]
 
 const serviceCategories = [
