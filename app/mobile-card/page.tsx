@@ -44,7 +44,7 @@ const companies = [
 const actions = [
   { label: 'Website', href: 'https://onixgroup.ae' },
   { label: 'Company Profile', href: '/company-profile.pdf' },
-  { label: 'Instagram', href: 'https://www.instagram.com/onixgroup_ae/' },
+  { label: 'Instagram', href: 'https://www.instagram.com/onixgroup.ae/' },
   { label: 'Email', href: 'mailto:info@onixgroup.ae' },
   { label: 'Call', href: 'tel:+97142838880' },
   { label: 'WhatsApp', href: 'https://wa.me/97142838880' },

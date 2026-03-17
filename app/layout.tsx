@@ -64,7 +64,7 @@ const structuredData = [
     logo: `${SITE_URL}/images/ONIX_LOGO.png`,
     sameAs: [
       'https://www.linkedin.com/company/onix-engineering-consultancy/',
-      'https://www.instagram.com/onixgroup_ae/'
+      'https://www.instagram.com/onixgroup.ae/'
     ],
     contactPoint: [
       {
